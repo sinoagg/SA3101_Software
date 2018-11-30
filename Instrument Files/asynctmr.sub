@@ -1,0 +1,61 @@
+FPAttributeValueFile
+
+0 SetAsyncTimerAttribute 2 3 false s
+0 GetAsyncTimerAttribute 2 3 false g
+
+1 all "Interval" ASYNC_ATTR_INTERVAL d sg
+ "Specifies the wait interval, in seconds, between timer events. "
+ "The minimum interval value that you can use depends on the system that is running the "
+ "asynchronous timer.\n\n" 
+ "If the interval is smaller than the asynchronous timer resolution supported by your system, LabWindows/CVI uses " 
+ "an interval equal to the resolution supported by the system. "
+ "Call GetAsyncTimerResolution to get the asynchronous "
+ "timer resolution for your system. If the timer has already started, setting ASYNC_ATTR_INTERVAL resets the "
+ "timer."
+ "Asynchronous timer tick events can accumulate when the library thread responsible for generating timer tick "
+ "events is unable to call the callback function at the specified interval. For example, the library thread "
+ "could fall behind if the time to complete the callback function is longer than the specified interval. When "
+ "asynchronous timer tick events accumulate, the library thread dispatches the accumulated events "
+ "as quickly as possible. In this case, the interval at which the library thread generates events might be "
+ "shorter than the interval you specified when you created the asynchronous timer. If the cause for the "
+ "accumulated events is temporary and the library thread finishes generating the accumulated events, "
+ "the library thread resumes generating events at the interval you specified when you created the "
+ "asynchronous timer."
+ "On Windows, all asynchronous callback functions share a common thread. As a result, the duration of any "
+ "asynchronous callback function can have an impact on all other asynchronous timers, possibly causing timer "
+ "tick events to accumulate."
+
+1 all "Count" ASYNC_ATTR_COUNT i sg
+ "When set, specifies the number of timer events to be generated before the timer is automatically discarded. "
+ "A negative value will make the timer generate events until it is discarded by a call to DiscardAsyncTimer or "
+ "suspended by a call to SuspendAsyncTimerCallbacks. A value of zero will return an error. "
+ "When queried, indicates the number of timer events remaining before the timer is automatically discarded."
+
+1 all "Enabled" ASYNC_ATTR_ENABLED i sg
+ "Specifies whether the asynchronous timer generates events. To enable the timer and generate events, set "
+ "ASYNC_ATTR_ENABLED to 1. To disable the timer, set ASYNC_ATTR_ENABLED to 0. Setting ASYNC_ATTR_ENABLED to 0 and " 
+ "then back to 1 does not disturb the ongoing interval schedule.\n\n"
+ "The value of the initialState parameter of the NewAsyncTimer and NewAsyncTimerWithPriority functions sets the "
+ "value of ASYNC_ATTR_ENABLED. The ResumeAsyncTimerCallbacks or SuspendAsyncTimerCallbacks functions do not "
+ "affect the value of ASYNC_ATTR_ENABLED.\n\n"
+
+1 all "Callback Data" ASYNC_ATTR_CALLBACK_DATA p sg
+ "A pointer-width value that is passed to the asynchronous timer callback function. The value can be a pointer "
+ "to user data."
+
+1 all "Callback Function" ASYNC_ATTR_CALLBACK_FUNCTION_POINTER p sg
+ "A pointer to the callback function for the asynchronous timer."
+
+1 all "Thread Priority" ASYNC_ATTR_THREAD_PRIORITY i g
+ "Specifies the thread priority at which the timer runs. This attribute is available only on real-time systems.\n\n"
+ "The thread priority can be any value from -15 to 15. The default priority of a thread in the system is 0. "
+ "The operating system scheduler runs at priority level 9. Any threads running at a priority level equal to or "
+ "higher than 9 are not subject to timeslicing by the scheduler and will run until they yield the CPU or are "
+ "preempted by a higher priority thread."
+
+1 all "Timer Time" ASYNC_ATTR_TIMER_TIME d g
+ "The interval, in seconds, between the first and the most recent call to the asynchronous timer "
+ "callback function."
+
+1 all "Delta Time" ASYNC_ATTR_DELTA_TIME d g
+ "The interval, in seconds, between the two most recent calls to the asynchronous timer callback function."

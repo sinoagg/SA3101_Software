@@ -1,0 +1,1988 @@
+[Project Header]
+Version = 1700
+Pathname = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/SA31021.prj"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2017"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2017"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Files = 119
+Target Type = "Executable"
+Flags = 2064
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[Folders]
+Source Files Folder Not Added Yet = True
+User Interface Files Folder Not Added Yet = True
+Library Files Folder Not Added Yet = True
+Folder 0 = "UI Files"
+FolderEx 0 = "UI Files"
+Folder 1 = "Src"
+FolderEx 1 = "Src"
+Folder 2 = "Src/Panel"
+FolderEx 2 = "Panel"
+FolderEx 2 Parent = 1
+Folder 3 = "Resource"
+FolderEx 3 = "Resource"
+Folder 4 = "Include Files"
+FolderEx 4 = "Include Files"
+Folder 5 = "Include Files/Panel"
+FolderEx 5 = "Panel"
+FolderEx 5 Parent = 4
+Folder 6 = "Instrument Files"
+FolderEx 6 = "Instrument Files"
+
+[File 0001]
+File Type = "User Interface Resource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/EnvironmentDisp.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/EnvironmentDisp.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0002]
+File Type = "User Interface Resource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Experiment List.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Experiment List.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0003]
+File Type = "User Interface Resource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/GraphDisp.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/GraphDisp.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0004]
+File Type = "User Interface Resource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/I-T Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/I-T Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0005]
+File Type = "User Interface Resource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/I-V Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/I-V Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0006]
+File Type = "User Interface Resource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Id-Vds Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Id-Vds Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0007]
+File Type = "User Interface Resource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Id-Vgs Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Id-Vgs Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0008]
+File Type = "User Interface Resource"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/MainPanel.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/MainPanel.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0009]
+File Type = "User Interface Resource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/ProjectPanel.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/ProjectPanel.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0010]
+File Type = "User Interface Resource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/R-T Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/R-T Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0011]
+File Type = "User Interface Resource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Result Menu.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Result Menu.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0012]
+File Type = "User Interface Resource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Sample Analyze.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Sample Analyze.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0013]
+File Type = "User Interface Resource"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Sample Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Sample Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0014]
+File Type = "User Interface Resource"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/SetPanel.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/SetPanel.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0015]
+File Type = "User Interface Resource"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/TableData.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/TableData.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0016]
+File Type = "User Interface Resource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/TerminalPanel.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/TerminalPanel.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0017]
+File Type = "User Interface Resource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/Tools.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/Tools.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0018]
+File Type = "User Interface Resource"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/V-I Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/V-I Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0019]
+File Type = "User Interface Resource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/V-T Configuration.uir"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/V-T Configuration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "UI Files"
+Folder Id = 0
+
+[File 0020]
+File Type = "CSource"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Environment.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Environment.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0021]
+File Type = "CSource"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ExpListPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ExpListPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0022]
+File Type = "CSource"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/I_T_Panel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/I_T_Panel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0023]
+File Type = "CSource"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/I_V_Panel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/I_V_Panel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0024]
+File Type = "CSource"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/IdVdsPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/IdVdsPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0025]
+File Type = "CSource"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/IdVgsPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/IdVgsPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0026]
+File Type = "CSource"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/LoadPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/LoadPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0027]
+File Type = "CSource"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/MainPanelCb.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/MainPanelCb.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0028]
+File Type = "CSource"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ProjectPanelCB.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ProjectPanelCB.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0029]
+File Type = "CSource"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/R_T_Panel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/R_T_Panel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0030]
+File Type = "CSource"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ResultMenuPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ResultMenuPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0031]
+File Type = "CSource"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/SampleCfgPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/SampleCfgPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0032]
+File Type = "CSource"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/SetPanelCB.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/SetPanelCB.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0033]
+File Type = "CSource"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UI Files/table.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files/table.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0034]
+File Type = "CSource"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ToolsPanel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ToolsPanel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0035]
+File Type = "CSource"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/V_I_Panel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/V_I_Panel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0036]
+File Type = "CSource"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/V_T_Panel.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/V_T_Panel.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src/Panel"
+Folder Id = 2
+
+[File 0037]
+File Type = "CSource"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/AbnormalDataCache.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/AbnormalDataCache.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0038]
+File Type = "CSource"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Instrument Files/asynctmr.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Instrument Files/asynctmr.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0039]
+File Type = "CSource"
+Res Id = 39
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Cgs_mt.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Cgs_mt.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0040]
+File Type = "CSource"
+Res Id = 40
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Curve.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Curve.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0041]
+File Type = "CSource"
+Res Id = 41
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/cvixml.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/cvixml.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0042]
+File Type = "CSource"
+Res Id = 42
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/File.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/File.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0043]
+File Type = "CSource"
+Res Id = 43
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Graph.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Graph.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0044]
+File Type = "CSource"
+Res Id = 44
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/inifile.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/inifile.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0045]
+File Type = "CSource"
+Res Id = 45
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/main.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/main.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0046]
+File Type = "CSource"
+Res Id = 46
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/msxmldom.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/msxmldom.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0047]
+File Type = "CSource"
+Res Id = 47
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Plot.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Plot.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0048]
+File Type = "CSource"
+Res Id = 48
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Protocol.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Protocol.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0049]
+File Type = "CSource"
+Res Id = 49
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/system_ini.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/system_ini.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0050]
+File Type = "CSource"
+Res Id = 50
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Timer.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Timer.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0051]
+File Type = "CSource"
+Res Id = 51
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Uart.c"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Uart.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Src"
+Folder Id = 1
+
+[File 0052]
+File Type = "Unknown"
+Res Id = 52
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/0b5f76e6304de51436b2a3c882ad751.bmp"
+Path Line0001 = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/0b5f76e6304de51436b2a3c882ad"
+Path Line0002 = "751.bmp"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0053]
+File Type = "Unknown"
+Res Id = 53
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/analyze.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/analyze.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0054]
+File Type = "Unknown"
+Res Id = 54
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Analyze_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Analyze_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0055]
+File Type = "Unknown"
+Res Id = 55
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Arrow.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Arrow.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0056]
+File Type = "Unknown"
+Res Id = 56
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/bg.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/bg.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0057]
+File Type = "Unknown"
+Res Id = 57
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/bg_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/bg_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0058]
+File Type = "Unknown"
+Res Id = 58
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Configure.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Configure.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0059]
+File Type = "Unknown"
+Res Id = 59
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Configure_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Configure_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0060]
+File Type = "Unknown"
+Res Id = 60
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/FET.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/FET.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0061]
+File Type = "Unknown"
+Res Id = 61
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/GND.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/GND.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0062]
+File Type = "Unknown"
+Res Id = 62
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Graph.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Graph.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0063]
+File Type = "Unknown"
+Res Id = 63
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Graph_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Graph_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0064]
+File Type = "Unknown"
+Res Id = 64
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/I-I.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/I-I.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0065]
+File Type = "Unknown"
+Res Id = 65
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/I.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/I.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0066]
+File Type = "Unknown"
+Res Id = 66
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/I_Bias.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/I_Bias.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0067]
+File Type = "Unknown"
+Res Id = 67
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/I_I.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/I_I.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0068]
+File Type = "Unknown"
+Res Id = 68
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/My Projects.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/My Projects.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0069]
+File Type = "Unknown"
+Res Id = 69
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/My Settings.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/My Settings.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0070]
+File Type = "Unknown"
+Res Id = 70
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/no.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/no.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0071]
+File Type = "Unknown"
+Res Id = 71
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/R.bmp"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/R.bmp"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0072]
+File Type = "Unknown"
+Res Id = 72
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/R.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/R.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0073]
+File Type = "Unknown"
+Res Id = 73
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/R_Bias.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/R_Bias.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0074]
+File Type = "Unknown"
+Res Id = 74
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Run.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Run.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0075]
+File Type = "Unknown"
+Res Id = 75
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Save.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Save.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0076]
+File Type = "Unknown"
+Res Id = 76
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Save_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Save_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0077]
+File Type = "Unknown"
+Res Id = 77
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/saveData.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/saveData.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0078]
+File Type = "Unknown"
+Res Id = 78
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/saveData_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/saveData_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0079]
+File Type = "Unknown"
+Res Id = 79
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Select.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Select.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0080]
+File Type = "Unknown"
+Res Id = 80
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Select_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Select_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0081]
+File Type = "Unknown"
+Res Id = 81
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Stop.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Stop.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0082]
+File Type = "Unknown"
+Res Id = 82
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Table.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Table.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0083]
+File Type = "Unknown"
+Res Id = 83
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Table_pressed.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Table_pressed.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0084]
+File Type = "Unknown"
+Res Id = 84
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/Tools.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/Tools.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0085]
+File Type = "Unknown"
+Res Id = 85
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/V.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/V.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0086]
+File Type = "Unknown"
+Res Id = 86
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/V_Bias.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/V_Bias.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0087]
+File Type = "Unknown"
+Res Id = 87
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/V_Bias_I.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/V_Bias_I.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0088]
+File Type = "Unknown"
+Res Id = 88
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/V_I.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/V_I.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0089]
+File Type = "Unknown"
+Res Id = 89
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/V_I.png"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/V_I.png"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0090]
+File Type = "Unknown"
+Res Id = 90
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Resource/vv.ico"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/vv.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Resource"
+Folder Id = 3
+
+[File 0091]
+File Type = "Include"
+Res Id = 91
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ExpListPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ExpListPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0092]
+File Type = "Include"
+Res Id = 92
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/I_T_Panel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/I_T_Panel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0093]
+File Type = "Include"
+Res Id = 93
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/IdVdsPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/IdVdsPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0094]
+File Type = "Include"
+Res Id = 94
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/IdVgsPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/IdVgsPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0095]
+File Type = "Include"
+Res Id = 95
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/LoadPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/LoadPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0096]
+File Type = "Include"
+Res Id = 96
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/MainPanelCb.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/MainPanelCb.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0097]
+File Type = "Include"
+Res Id = 97
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ResultMenuPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ResultMenuPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0098]
+File Type = "Include"
+Res Id = 98
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/SampleCfgPanel.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/SampleCfgPanel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0099]
+File Type = "Include"
+Res Id = 99
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/table.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/table.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files/Panel"
+Folder Id = 5
+
+[File 0100]
+File Type = "Include"
+Res Id = 100
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/AbnormalDataCache.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/AbnormalDataCache.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0101]
+File Type = "Include"
+Res Id = 101
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Instrument Files/asynctmr.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Instrument Files/asynctmr.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0102]
+File Type = "Include"
+Res Id = 102
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Cgs_mt.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Cgs_mt.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0103]
+File Type = "Include"
+Res Id = 103
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Curve.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Curve.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0104]
+File Type = "Include"
+Res Id = 104
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/cvixml.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/cvixml.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0105]
+File Type = "Include"
+Res Id = 105
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Environment.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Environment.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0106]
+File Type = "Include"
+Res Id = 106
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/File.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/File.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0107]
+File Type = "Include"
+Res Id = 107
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Graph.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Graph.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0108]
+File Type = "Include"
+Res Id = 108
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/inifile.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/inifile.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0109]
+File Type = "Include"
+Res Id = 109
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/main.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/main.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0110]
+File Type = "Include"
+Res Id = 110
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/msxmldom.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/msxmldom.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0111]
+File Type = "Include"
+Res Id = 111
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Plot.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Plot.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0112]
+File Type = "Include"
+Res Id = 112
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/ProjectPanelCB.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/ProjectPanelCB.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0113]
+File Type = "Include"
+Res Id = 113
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Protocol.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Protocol.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0114]
+File Type = "Include"
+Res Id = 114
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/SetPanelCB.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/SetPanelCB.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0115]
+File Type = "Include"
+Res Id = 115
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/system_ini.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/system_ini.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0116]
+File Type = "Include"
+Res Id = 116
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Timer.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Timer.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0117]
+File Type = "Include"
+Res Id = 117
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Src/Uart.h"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src/Uart.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 4
+
+[File 0118]
+File Type = "Function Panel"
+Res Id = 118
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Instrument Files/asynctmr.fp"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Instrument Files/asynctmr.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 6
+
+[File 0119]
+File Type = "Function Panel"
+Res Id = 119
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Instrument Files/excelreport.fp"
+Path = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Instrument Files/excelreport.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 6
+
+[Custom Build Configs]
+Num Custom Build Configs = 0
+
+[Default Build Config Debug]
+Config Name = "Debug"
+Is 64-Bit = False
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "Optimize for speed (level 2)"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "Common"
+Warning List None = ""
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Resource/3102.ico"
+Icon File = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/3102.ico"
+Application Title = "SA3102"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "浙江鼎奕科技发展有限公司"
+Company Name Ex = "%company"
+File Description = "SA3102 (Debug x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "SA3102"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright  浙江鼎奕科技发展有限公司 2018"
+Legal Copyright Ex = "Copyright  %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "SA3102.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "浙江鼎奕科技发展有限公司 SA3102"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release]
+Config Name = "Release"
+Is 64-Bit = False
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "Optimize for speed (level 2)"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "Common"
+Warning List None = ""
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Resource/3102.ico"
+Icon File = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/3102.ico"
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "浙江鼎奕科技发展有限公司"
+Company Name Ex = "%company"
+File Description = "SA3102 (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "SA3102"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright  浙江鼎奕科技发展有限公司 2018"
+Legal Copyright Ex = "Copyright  %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "SA3102.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "浙江鼎奕科技发展有限公司 SA3102"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Debug64]
+Config Name = "Debug64"
+Is 64-Bit = True
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "Optimize for speed (level 2)"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "Common"
+Warning List None = ""
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "浙江鼎奕科技发展有限公司"
+Company Name Ex = "%company"
+File Description = "SA3102 (Debug x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "SA3102"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright  浙江鼎奕科技发展有限公司 2018"
+Legal Copyright Ex = "Copyright  %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "SA3102.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "浙江鼎奕科技发展有限公司 SA3102"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release64]
+Config Name = "Release64"
+Is 64-Bit = True
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "Common"
+Warning List None = ""
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Resource/3102.ico"
+Icon File = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/3102.ico"
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "浙江鼎奕科技发展有限公司"
+Company Name Ex = "%company"
+File Description = "SA3102 (Release x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "SA3102"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright  浙江鼎奕科技发展有限公司 2018"
+Legal Copyright Ex = "Copyright  %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "SA3102.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "浙江鼎奕科技发展有限公司 SA3102"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Unreferenced Identifiers Warning = True
+Enable Assignment In Conditional Warning = True
+Enable C99 Extensions = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 250000
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = True
+Include Path 1 Rel To = "Project"
+Include Path 1 Rel Path = "UI Files"
+Include Path 1 = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/UI Files"
+Include Path 2 Is Rel = True
+Include Path 2 Rel To = "Project"
+Include Path 2 Rel Path = "Src"
+Include Path 2 = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Src"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "SA3102.exe"
+Executable File_Debug = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/SA3102.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "SA3102.exe"
+Executable File_Release = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/SA3102.exe"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "SA3102.exe"
+Executable File_Debug64 = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/SA3102.exe"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "SA3102.exe"
+Executable File_Release64 = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/SA3102.exe"
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Resource/3102.ico"
+Icon File = "/d/SA3102/SA3102NEW/SA3102/SA3102_Software/Resource/3102.ico"
+Application Title = ""
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "浙江鼎奕科技发展有限公司"
+Company Name Ex = "%company"
+File Description = "SA3102 (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "SA3102"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright  浙江鼎奕科技发展有限公司 2018"
+Legal Copyright Ex = "Copyright  %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "SA3102.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "浙江鼎奕科技发展有限公司 SA3102"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+tpcEnabled x64 = 0
+tpcOverrideEnvironment x64 = 0
+

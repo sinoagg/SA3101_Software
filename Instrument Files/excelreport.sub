@@ -1,0 +1,392 @@
+FPAttributeValueFile
+n SubDescrFormat="HTML"
+
+v boolean		ExRConst_False	(0)	"Boolean False"
+			ExRConst_True	(1)	"Boolean True"
+
+
+v windowState		ExRConst_Maximized	(-4137)
+			ExRConst_Minimized	(-4140)
+			ExRConst_Normal		(-4143)
+		
+v pageOrientation	ExRConst_Landscape	(2)
+			ExRConst_Portrait	(1)
+
+v underlineStyle	ExRConst_UnderlineStyleDouble		(-4119)
+			ExRConst_UnderlineStyleDoubleAccounting	(5)
+			ExRConst_UnderlineStyleNone		(-4142)
+			ExRConst_UnderlineStyleSingle		(2)
+			ExRConst_UnderlineStyleSingleAccounting	(4)
+
+v colorIndex		ExRConst_ColorIndexAutomatic	(-4105)
+			ExRConst_ColorIndexNone		(-4142)
+	
+v chartType	ExRConst_DefaultChartType 	(0)
+		ExRConst_ColumnClustered 	(51)
+		ExRConst_ColumnStacked 		(52)
+		ExRConst_ColumnStacked100 	(53)
+		ExRConst_3DColumnClustered 	(54)
+		ExRConst_3DColumnStacked 	(55)
+		ExRConst_3DColumnStacked100 	(56)
+		ExRConst_BarClustered 		(57)
+		ExRConst_BarStacked 		(58)
+		ExRConst_BarStacked100 		(59)
+		ExRConst_3DBarClustered 	(60)
+		ExRConst_3DBarStacked 		(61)
+		ExRConst_3DBarStacked100 	(62)
+		ExRConst_LineStacked 		(63)
+		ExRConst_LineStacked100 	(64)
+		ExRConst_LineMarkers 		(65)
+		ExRConst_LineMarkersStacked	(66)
+		ExRConst_LineMarkersStacked100 	(67)
+		ExRConst_PieOfPie 		(68)
+		ExRConst_PieExploded 		(69)
+		ExRConst_3DPieExploded 		(70)
+		ExRConst_BarOfPie 		(71)
+		ExRConst_XYScatterSmooth 		(72)
+		ExRConst_XYScatterSmoothNoMarkers 	(73)
+		ExRConst_XYScatterLines 		(74)
+		ExRConst_XYScatterLinesNoMarkers	(75)
+		ExRConst_AreaStacked 		(76)
+		ExRConst_AreaStacked100 	(77)
+		ExRConst_3DAreaStacked 		(78)
+		ExRConst_3DAreaStacked100 	(79)
+		ExRConst_DoughnutExploded 	(80)
+		ExRConst_RadarMarkers 		(81)
+		ExRConst_RadarFilled 		(82)
+		ExRConst_Surface 		(83)
+		ExRConst_SurfaceWireframe 	(84)
+		ExRConst_SurfaceTopView		(85)
+		ExRConst_SurfaceTopViewWireframe	(86)
+		ExRConst_Bubble 		(15)
+		ExRConst_Bubble3DEffect 	(87)
+		ExRConst_StockHLC 		(88)
+		ExRConst_StockOHLC 		(89)
+		ExRConst_StockVHLC 		(90)
+		ExRConst_StockVOHLC 		(91)
+		ExRConst_CylinderColClustered 	(92)
+		ExRConst_CylinderColStacked	(93)
+		ExRConst_CylinderColStacked100 	(94)
+		ExRConst_CylinderBarClustered 	(95)
+		ExRConst_CylinderBarStacked 	(96)
+		ExRConst_CylinderBarStacked100 	(97)
+		ExRConst_CylinderCol 		(98)
+		ExRConst_ConeColClustered	(99)
+		ExRConst_ConeColStacked 	(100)
+		ExRConst_ConeColStacked100	(101)
+		ExRConst_ConeBarClustered 	(102)
+		ExRConst_ConeBarStacked 	(103)
+		ExRConst_ConeBarStacked100 	(104)
+		ExRConst_ConeCol		(105)
+		ExRConst_PyramidColClustered 	(106)
+		ExRConst_PyramidColStacked 	(107)
+		ExRConst_PyramidColStacked100 	(108)
+		ExRConst_PyramidBarClustered 	(109)
+		ExRConst_PyramidBarStacked 	(110)
+		ExRConst_PyramidBarStacked100 	(111)
+		ExRConst_PyramidCol 	(112)
+		ExRConst_3DColumn 	(-4100)
+		ExRConst_Column		(3)
+		ExRConst_Combination	(-4111)
+		ExRConst_Line 		(4)
+		ExRConst_3DLine 	(-4101)
+		ExRConst_3DPie 		(-4102)
+		ExRConst_Pie 		(5)
+		ExRConst_XYScatter 	(-4169)
+		ExRConst_3DArea 	(-4098)
+		ExRConst_Area		(1)
+		ExRConst_Doughnut 	(-4120)
+		ExRConst_Radar 		(-4151)
+		ExRConst_3DSurface	(-4103)
+		ExRConst_Bar 		(2)
+		ExRConst_3DBar		(-4099)	
+
+
+
+v chartWizardGallery		ExRConst_GalleryArea		(1)
+				ExRConst_GalleryBar 		(2)
+				ExRConst_GalleryColumn 		(-4100)
+				ExRConst_GalleryLine 		(4)
+				ExRConst_GalleryPie 		(5)
+				ExRConst_GalleryRadar 		(-4151)
+				ExRConst_GalleryXYScatter 	(-4169)
+				ExRConst_GalleryCombination	(-4111)
+				ExRConst_Gallery3DArea 		(-4098)
+				ExRConst_Gallery3DBar		(-4099)				
+				ExRConst_Gallery3DColumn	(3)
+				ExRConst_Gallery3DLine	 	(-4101)
+				ExRConst_Gallery3DPie 		(-4102)
+				ExRConst_Gallery3DSurface	(-4103)
+				ExRConst_GalleryDoughnut 	(-4120)
+
+				
+
+	
+v displayBlankAs		ExRConst_Interpolated	(3)
+				ExRConst_NotPlotted	(1)
+				ExRConst_Zero		(2)
+
+
+v plotBy		ExRConst_DefaultRowCol	(0)
+			ExRConst_Columns	(2)
+			ExRConst_Rows		(1)
+
+v printingSize		ExRConst_FitToPage	(2)
+			ExRConst_FullPage	(3)
+			ExRConst_ScreenSize	(1)
+
+v lineStyle		ExRConst_Continuous	(1)
+			ExRConst_Dash		(-4115)
+			ExRConst_DashDot	(4)
+			ExRConst_DashDotDot	(5)
+			ExRConst_Dot		(-4118)
+			ExRConst_Double		(-4119)
+			ExRConst_SlantDashDot	(13)
+			ExRConst_LineStyleNone	(-4142)
+
+v borderWeight		ExRConst_Hairline	(1)
+			ExRConst_Medium		(-4138)
+			ExRConst_Thick		(4)
+			ExRConst_Thin		(2)
+
+
+v legendPosition	ExRConst_LegendPositionBottom	(-4107)
+			ExRConst_LegendPositionCorner	(2)
+			ExRConst_LegendPositionLeft	(-4131)
+			ExRConst_LegendPositionRight	(-4152)
+			ExRConst_LegendPositionTop	(-4160)
+
+
+v categoryType		ExRConst_CategoryScale	(2)
+			ExRConst_TimeScale	(3)
+			ExRConst_AutomaticScale	(-4105)
+
+v displayUnit		ExRConst_Hundreds		(-2)
+			ExRConst_Thousands		(-3)
+			ExRConst_TenThousands		(-4)
+			ExRConst_HundredThousands	(-5)
+			ExRConst_Millions		(-6)
+			ExRConst_TenMillions		(-7)
+			ExRConst_HundredMillions	(-8)
+			ExRConst_ThousandMillions	(-9)
+			ExRConst_MillionMillions	(-10)
+
+
+v tickMark		ExRConst_TickMarkCross		(4)
+			ExRConst_TickMarkInside		(2)
+			ExRConst_TickMarkNone		(-4142)
+			ExRConst_TickMarkOutside	(3)
+
+
+v scaleType		ExRConst_ScaleLinear		(-4132)
+			ExRConst_ScaleLogarithmic	(-4133)
+
+
+v axisTitleOrientation		ExRConst_Downward	(-4170)
+				ExRConst_Horizontal	(-4128)
+				ExRConst_Upward		(-4171)
+				ExRConst_Vertical	(-4166)
+
+v rangeHorizontalAlignment	ExRConst_HAlignCenter	(-4108)
+				ExRConst_HAlignCenterAcrossSelection   (7)
+				ExRConst_HAlignDistributed	(-4117)
+				ExRConst_HAlignFill	(5)
+				ExRConst_HAlignGeneral	(1)
+				ExRConst_HAlignJustify	(-4130)
+				ExRConst_HAlignLeft	(-4131)
+				ExRConst_HAlignRight	(-4152)
+
+
+v rangeVerticalAlignment	ExRConst_VAlignBottom   (-4107)
+				ExRConst_VAlignCenter   (-4108)
+				ExRConst_VAlignDistributed  (-4117)
+				ExRConst_VAlignJustify   (-4130)
+				ExRConst_VAlignTop   (-4160)
+
+
+
+0 ExcelRpt_SetApplicationAttribute 2 3 false s
+0 ExcelRpt_GetApplicationAttribute 2 3 false g
+
+1 all	"Height"		ER_AP_ATTR_HEIGHT			d		sg	"This value is specified in points. One point is 1/72 inches."
+1 all	"Left"			ER_AP_ATTR_LEFT				d		sg	"This value is specified in points. One point is 1/72 inches."
+1 all	"Top"			ER_AP_ATTR_TOP				d		sg	"This value is specified in points. One point is 1/72 inches."
+1 all	"Visible"		ER_AP_ATTR_VISIBLE 			i		sg	boolean	"Specifies whether the application is visible."
+1 all	"Width"			ER_AP_ATTR_WIDTH			d		sg	"This value is specified in points. One point is 1/72 inches."
+1 all	"Window State"	ER_AP_ATTR_WINDOW_STATE		i	sg	windowState	"Specifies the window state of the application."
+						
+0 ExcelRpt_GetWorkbookAttribute 2 3 false g
+
+1 all "Number of Chartsheets"	ER_WB_ATTR_NUM_CHARTS			i	g	"The number of chartsheets in the workbook.  This value does not include charts embedded in worksheets."
+1 all "Number of Total Sheets"	ER_WB_ATTR_NUM_TOTAL_SHEETS		i	g	"The total number of worksheets and chartsheets in the workbook."
+1 all "Number of Worksheets"	ER_WB_ATTR_NUM_WORKSHEETS		i	g	"The number of worksheets in the workbook."
+
+0 ExcelRpt_SetWorksheetAttribute 2 3 false s
+0 ExcelRpt_GetWorksheetAttribute 2 3 false g
+
+1 all "Index"						ER_WS_ATTR_INDEX					i	g	"The 1-based index of the worksheet in the workbook. Use with the index-based functions in the Workbook class, such as ExcelRpt_GetSheetTypeFromIndex."
+
+1 all "Name"						ER_WS_ATTR_NAME						s	sg	
+ "The name of the worksheet.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the name, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetWorksheetAttribute.htm')\">ExcelRpt_GetWorksheetAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_WS_ATTR_NAME_LEN.html')\">ER_WS_ATTR_NAME_LEN</a> attribute."
+
+1 all "Name Length"					ER_WS_ATTR_NAME_LEN					i	g	
+ "The number of bytes in the name of the worksheet. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetWorksheetAttribute.htm')\">ExcelRpt_GetWorksheetAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_WS_ATTR_NAME.html')\">ER_WS_ATTR_NAME</a> attribute."
+
+1 all "Number of Embedded Charts"	ER_WS_ATTR_NUM_EMBEDDED_CHARTS		i	g	"The number of charts embedded in this worksheet."
+1 all "Print Page Orientation"		ER_WS_ATTR_PRINT_PAGE_ORIENTATION	i	sg	pageOrientation	"Specifies how the page is oriented when it is printed."
+1 all "Used Range"					ER_WS_ATTR_USED_RANGE				s	g	
+ "A range including all cells in the worksheet that are being used.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the range, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetWorksheetAttribute.htm')\">ExcelRpt_GetWorksheetAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_WS_ATTR_USED_RANGE_LEN.html')\">ER_WS_ATTR_USED_RANGE_LEN</a> attribute."
+
+1 all "Used Range Length"			ER_WS_ATTR_USED_RANGE_LEN			i	g 	
+ "The length of the range of cells used. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetWorksheetAttribute.htm')\">ExcelRpt_GetWorksheetAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_WS_ATTR_USED_RANGE.html')\">ER_WS_ATTR_USED_RANGE</a> attribute."
+
+0 ExcelRpt_SetCellRangeAttribute 3 4 false s
+0 ExcelRpt_GetCellRangeAttribute 3 4 false g
+
+1 all "Background Color"		ER_CR_ATTR_BGCOLOR				i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Column Width"			ER_CR_ATTR_COLUMN_WIDTH			d		sg	"This value is specified in number of characters. Refer to the Excel documentation for details."
+1 all "Comment"					ER_CR_ATTR_COMMENT				s		sg	
+ "The text in the comment.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the comment, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_COMMENT_LEN.html')\">ER_CR_ATTR_COMMENT_LEN</a> attribute."
+
+1 all "Comment Length"			ER_CR_ATTR_COMMENT_LEN			i		g	
+ "The number of bytes in the comment text. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_COMMENT.html')\">ER_CR_ATTR_COMMENT</a> attribute."
+
+1 all "Font Bold"				ER_CR_ATTR_FONT_BOLD			i		sg	boolean	"Specifies whether the font is bold."
+1 all "Font Color"				ER_CR_ATTR_FONT_COLOR			i	sg 	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Font Italic"				ER_CR_ATTR_FONT_ITALIC			i		sg	boolean	"Specifies whether the font is italic."
+1 all "Font Name"				ER_CR_ATTR_FONT_NAME			s		sg	
+ "The name of the font for the cell range.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the font name, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_FONT_NAME_LEN.html')\">ER_CR_ATTR_FONT_NAME_LEN</a> attribute."
+
+1 all "Font Name Length"		ER_CR_ATTR_FONT_NAME_LEN		i		g	
+ "The number of bytes in the name of the font for the cell range. The length of the does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_FONT_NAME.html')\">ER_CR_ATTR_FONT_NAME</a> attribute."
+
+1 all "Font Size"				ER_CR_ATTR_FONT_SIZE			i		sg	"The font size."
+1 all "Font Strikethrough"		ER_CR_ATTR_FONT_STRIKETHROUGH	i		sg	boolean	"Specifies whether the font has strikethrough."
+1 all "Font Underline"			ER_CR_ATTR_FONT_UNDERLINE		i		sg	underlineStyle	"Specifies whether the font is underlined."
+1 all "Formula"					ER_CR_ATTR_FORMULA				s		sg	
+ "The formula used to calculate the value of this cell, for example, <span class=\"Monospace\">=SUM(A2:A4)</span>.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the formula, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_FORMULA_LEN.html')\">ER_CR_ATTR_FORMULA_LEN</a> attribute."
+
+1 all "Formula Length"			ER_CR_ATTR_FORMULA_LEN			i		g	
+ "The number of bytes in the formula. The length of the does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_FORMULA.html')\">ER_CR_ATTR_FORMULA</a> attribute."
+
+1 all "Horizontal Alignment"	ER_CR_ATTR_HORIZ_ALIGN			i	sg	rangeHorizontalAlignment	"Specifies how the cell contents are horizontally aligned within the cell."
+
+1 all "Number Format"			ER_CR_ATTR_NUMBER_FORMAT		s		sg	
+ "A format string that determines how values are displayed, for example, <span class=\"Monospace\">#,##0</span>. Refer to the Excel documentation for details.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the format string, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_NUMBER_FORMAT_LEN.html')\">ER_CR_ATTR_NUMBER_FORMAT_LEN</a> attribute."
+
+1 all "Number Format Length"	ER_CR_ATTR_NUMBER_FORMAT_LEN	i		g	
+  "The number of bytes in the format string. The length of the does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_NUMBER_FORMAT.html')\">ER_CR_ATTR_NUMBER_FORMAT</a> attribute." 
+
+1 all "Row Height"				ER_CR_ATTR_ROW_HEIGHT			d		sg	"This value is specified in points. One point is 1/72 inches."
+
+1 all "Text"					ER_CR_ATTR_TEXT					s		sg	
+ "The text contained in the cell.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the text, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_TEXT_LEN.html')\">ER_CR_ATTR_TEXT_LEN</a> attribute."
+
+1 all "Text Length"				ER_CR_ATTR_TEXT_LEN				i		g	
+ "The number of bytes in the text contained in the cell. The length of the does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetCellRangeAttribute.htm')\">ExcelRpt_GetCellRangeAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CR_ATTR_TEXT.html')\">ER_CR_ATTR_TEXT</a> attribute."
+
+1 all "Vertical Alignment"		ER_CR_ATTR_VERT_ALIGN			i	sg	rangeVerticalAlignment	"Specifies how the cell contents are vertically aligned within the cell."
+1 all "Wrap Text"				ER_CR_ATTR_WRAP_TEXT			i		sg	boolean	"Specifies whether to wrap the text in a cell."
+
+0 ExcelRpt_SetChartAttribute 2 3 false s
+0 ExcelRpt_GetChartAttribute 2 3 false g
+
+1 all "Area Border Color"					ER_CH_ATTR_CHARTAREA_BORDER_COLOR		i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Area Border LineStyle"				ER_CH_ATTR_CHARTAREA_BORDER_LINESTYLE	i		sg	lineStyle	"The line style of the chart area border."
+1 all "Area Border Weight"					ER_CH_ATTR_CHARTAREA_BORDER_WEIGHT		i		sg	borderWeight	"The weight of the chart area border."
+1 all "Chart Area Color"					ER_CH_ATTR_CHARTAREA_COLOR				i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Chart Type"							ER_CH_ATTR_CHART_TYPE					i		sg	chartType	"Specifies the chart type."
+1 all "Data Table Has Horizontal Border"	ER_CH_ATTR_DATATABLE_HAS_BORDER_HORIZ	i		sg	boolean	"Specifies whether the data table has a horizontal border."
+1 all "Data Table Has Outline Border"		ER_CH_ATTR_DATATABLE_HAS_BORDER_OUTLINE	i		sg	boolean	"Specifies whether the data table has an outline border."
+1 all "Data Table Has Vertical Border"		ER_CH_ATTR_DATATABLE_HAS_BORDER_VERT	i		sg	boolean	"Specifies whether the data table has a vertical border."
+1 all "Data Table Border Color"				ER_CH_ATTR_DATATABLE_BORDER_COLOR		i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Data Table Border Line Style"		ER_CH_ATTR_DATATABLE_BORDER_LINESTYLE	i		sg	lineStyle	"The line style of the data table border."
+1 all "Data Table Border Weight"			ER_CH_ATTR_DATATABLE_BORDER_WEIGHT		i		sg	borderWeight	"The weight of the data table border."
+1 all "Depth Percent"						ER_CH_ATTR_CHART_DEPTH_PERCENT			d		sg	"Specifies the depth of a 3-D chart as a percentage of the chart width. This value must be between 20 and 2000."
+1 all "Display Blank As"					ER_CH_ATTR_CHART_DISPLAY_BLANK_AS		i		sg	displayBlankAs	"Specifies how blank cells are treated when plotting."
+1 all "Elevation"							ER_CH_ATTR_CHART_ELEVATION				d		sg	"Specifies the elevation of a 3-D chart in degrees. This value must be between -90 and 90 except for 3-D bar charts where it must be between 0 and 44."
+1 all "Has Data Table"						ER_CH_ATTR_CHART_HAS_DATATABLE			i		sg	boolean	"Specifies whether the chart has a data table."
+1 all "Has Legend"							ER_CH_ATTR_CHART_HAS_LEGEND				i		sg		boolean	"Specifies whether the chart has a legend."
+1 all "Legend Position"						ER_CH_ATTR_LEGEND_POSITION				i		sg	legendPosition	"Specifies the position of the legend."
+1 all "Legend Color"						ER_CH_ATTR_LEGEND_COLOR					i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+
+1 all "Name"								ER_CH_ATTR_CHART_NAME					s		sg	
+ "The name of the chart.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the name, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAttribute.htm')\">ExcelRpt_GetChartAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_CHART_NAME_LEN.html')\">ER_CH_ATTR_CHART_NAME_LEN</a> attribute."
+
+1 all "Name Length"							ER_CH_ATTR_CHART_NAME_LEN				i		g   
+ "The number of bytes in the name of the chart. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAttribute.htm')\">ExcelRpt_GetChartAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_CHART_NAME.html')\">ER_CH_ATTR_CHART_NAME</a> attribute."
+
+1 all "Plot Area Color"						ER_CH_ATTR_PLOTAREA_COLOR				i	sg	"Color values are RGB values. Refer to the documentation for MakeColor for more information."
+1 all "Plot By"								ER_CH_ATTR_CHART_PLOT_BY				i		sg	plotBy	"Specifies whether data is plotted by row or by column."
+1 all "Plot Visible Only"					ER_CH_ATTR_CHART_PLOT_VISIBLE_ONLY		i		sg	boolean	"Specifies whether to plot only visible cells."
+1 all "Print Page Orientation"				ER_CH_ATTR_PAGE_ORIENTATION				i		sg	pageOrientation	"Specifies how the page is oriented when it is printed."
+1 all "Printing Size"						ER_CH_ATTR_PRINTING_CHART_SIZE			i		sg	printingSize	"Specifies the printing size of the chart."
+1 all "Rotation"							ER_CH_ATTR_CHART_ROTATION				d		sg	"Specifies the rotation of a 3-D chart in degrees. This value must be between 0 and 360 except for 3-D bar charts where it must be between 0 and 44."
+1 all "Size With Window"					ER_CH_ATTR_CHART_SIZE_WITH_WINDOW		i		sg	boolean	"Specifies whether the chart fills the entire window."
+
+1 all "Title"								ER_CH_ATTR_CHART_TITLE					s		sg	
+ "The title of the chart.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the title, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAttribute.htm')\">ExcelRpt_GetChartAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_CHART_TITLE_LEN.html')\">ER_CH_ATTR_CHART_TITLE_LEN</a> attribute."
+ 
+1 all "Title Length"						ER_CH_ATTR_CHART_TITLE_LEN				i		g	
+ "The number of bytes in the title of the chart. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAttribute.htm')\">ExcelRpt_GetChartAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_CHART_TITLE.html')\">ER_CH_ATTR_CHART_TITLE</a> attribute."
+
+
+0 ExcelRpt_SetChartAxisAttribute 4 5 false s
+0 ExcelRpt_GetChartAxisAttribute 4 5 false g
+
+1 all "Axis Title"							ER_CH_ATTR_AXIS_TITLE						s	sg	
+ "The title of the chart axis.<br><br>" 
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the title, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAxisAttribute.htm')\">ExcelRpt_GetChartAxisAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_AXIS_TITLE_LEN.html')\">ER_CH_ATTR_AXIS_TITLE_LEN</a> attribute."
+
+1 all "Axis Title Length"					ER_CH_ATTR_AXIS_TITLE_LEN					i	g	
+ "The number of bytes in the title of the chart axis. The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAxisAttribute.htm')\">ExcelRpt_GetChartAxisAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_AXIS_TITLE.html')\">ER_CH_ATTR_AXIS_TITLE</a> attribute."
+
+
+1 all "Axis Title Orientation"				ER_CH_ATTR_AXIS_TITLE_ORIENTATION			i	sg	axisTitleOrientation	"Specifies how the axis title is oriented."	
+1 all "Category Type"						ER_CH_ATTR_CATEGORY_TYPE					i	sg	categoryType "Specifies the category axis type. See the Excel documentation for details."
+1 all "Display Unit"						ER_CH_ATTR_DISPLAY_UNIT						i	sg	displayUnit "Specifies the unit label for the axis. See the Excel documentation for details."
+
+1 all "Display Unit Label Caption"			ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION		s	sg	
+ "The caption for the unit label.<br><br>"
+ "To <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you are obtaining the caption, call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAxisAttribute.htm')\">ExcelRpt_GetChartAxisAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION_LEN.html')\">ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION_LEN</a> attribute."
+
+1 all "Display Unit Label Caption Length"	ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION_LEN	i	g	
+ "The number of bytes in the caption for the unit label.  The length does not include the ASCII NUL byte.<br><br>"
+ "Use this value to <a href=\"javascript:LaunchHelp('cvi.chm::/UIRef/DeterminingBufferSize.htm')\">determine the size of the buffer</a> to pass when you call <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','FunctionReference/cviExcelRpt_GetChartAxisAttribute.htm')\">ExcelRpt_GetChartAxisAttribute</a> and specify the <a href=\"javascript:LaunchMergedHelp('cvi.chm','toolslib.chm','ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION.html')\">ER_CH_ATTR_DISPLAY_UNIT_LABEL_CAPTION</a> attribute."
+
+1 all "Has Display Unit Label"				ER_CH_ATTR_HAS_DISPLAY_UNIT_LABEL			i	sg	boolean "Specifies whether the unit label for the axis is visible."
+1 all "Has Major Gridlines"					ER_CH_ATTR_HAS_MAJOR_GRIDLINES				i	sg	boolean	"Specifies whether the major gridlines for the axis are visible."
+1 all "Has Minor Gridlines"					ER_CH_ATTR_HAS_MINOR_GRIDLINES				i	sg	boolean	"Specifies whether the minor gridlines for the axis are visible."
+1 all "Major Tick Mark"						ER_CH_ATTR_MAJOR_TICK_MARK					i	sg	tickMark	"Specifies the style for major tick marks."
+1 all "Major Unit"							ER_CH_ATTR_MAJOR_UNIT						d	sg  "Specifies the number of units represented by a major tick mark."
+1 all "Major Unit is Auto"					ER_CH_ATTR_MAJOR_UNIT_IS_AUTO				i	sg	boolean	"Specifies whether the number of units represented by a major tick mark is set automatically."
+1 all "Maximum Scale"						ER_CH_ATTR_MAXIMUM_SCALE					d	sg  "Specifies the maximum value for the axis."
+1 all "Maximum Scale is Auto"				ER_CH_ATTR_MAXIMUM_SCALE_IS_AUTO			i	sg	boolean	"Specifies whether the maximum value for the axis is set automatically."
+1 all "Minimum Scale"						ER_CH_ATTR_MINIMUM_SCALE					d	sg	"Specifies the minimum value for the axis."
+1 all "Minimum Scale is Auto"				ER_CH_ATTR_MINIMUM_SCALE_IS_AUTO			i	sg	boolean	"Specifies whether the minimum value for the axis is set automatically."
+1 all "Minor Tick Mark"						ER_CH_ATTR_MINOR_TICK_MARK					i	sg	tickMark	"Specifies the style for minor tick marks."
+1 all "Minor Unit"							ER_CH_ATTR_MINOR_UNIT						d	sg	"Specifies the number of units represented by a minor tick mark."
+1 all "Minor Unit is Auto"					ER_CH_ATTR_MINOR_UNIT_IS_AUTO				i	sg	boolean	"Specifies whether the number of units represented by a minor tick mark is set automatically."
+1 all "Scale Type"							ER_CH_ATTR_SCALE_TYPE						i	sg	scaleType	"Specifies the scale type of the value axis. Refer to the Excel documentation for details."
+1 all "Tick Mark Spacing"					ER_CH_ATTR_TICK_MARK_SPACING				d	sg	"Specifies the number of categories or series between tick mark labels for category and series axes. Refer to the Excel documentation for details."
+
+	
