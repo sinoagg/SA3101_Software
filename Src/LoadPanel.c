@@ -116,13 +116,13 @@ int LoadInitPanel (void)
 	if ((saveDataPanel = LoadPanel (mainPanel, "Result Menu.uir", SAVEDATA)) < 0)		//load savedata panel
 		return -1;
 	 //用于弹出提示savedata面板
-	if ((RemindsaveDataPanel = LoadPanel (SAVEDATA, "Result Menu.uir", REMINDSAVE)) < 0)//load savedata panel
+	if ((RemindsaveDataPanel = LoadPanel (saveDataPanel, "Result Menu.uir", REMINDSAVE)) < 0)//load savedata panel
 		return -1;
 	
 	
 	if ((setPanel = LoadPanel (mainPanel, "SetPanel.uir", SETTINGS)) < 0)				//load settings panel
 		return -1;	
-	
+																	
 	 //用于弹出Environment Settings面板
 	if ((ENVTPanel = LoadPanel (setPanel, "SetPanel.uir", ENVT)) < 0)					//load ENV panel
 		return -1;

@@ -1,0 +1,36 @@
+[NewAsyncTimer]
+Class="Function"
+Prototype="int NewAsyncTimer(double doubleInterval, int count, int status, int (*callbackFunc)(int, int, int, void *, int, int), void *callbackData);"
+
+[NewAsyncTimerWithPriority]
+Class="Function"
+Prototype="int NewAsyncTimerWithPriority(double doubleInterval, int count, int status, int (*callbackFunc)(int, int, int, void *, int, int), void *callbackData, int threadPriority);"
+
+[DiscardAsyncTimer]
+Class="Function"
+Prototype="int DiscardAsyncTimer(int timerId);"
+
+[SuspendAsyncTimerCallbacks]
+Class="Function"
+Prototype="int SuspendAsyncTimerCallbacks();"
+
+[ResumeAsyncTimerCallbacks]
+Class="Function"
+Prototype="int ResumeAsyncTimerCallbacks();"
+
+[SetAsyncTimerAttribute]
+Class="Function"
+Prototype="int SetAsyncTimerAttribute(int timerId, int attribute, ...);"
+
+[SetAsyncTimerAttributeFromParmInfo]
+Class="Function"
+Prototype="int SetAsyncTimerAttributeFromParmInfo(int timerId, int attribute, char *parmInfo);"
+
+[GetAsyncTimerAttribute]
+Class="Function"
+Prototype="int GetAsyncTimerAttribute(int timerId, int attribute, void *value);"
+
+[GetAsyncTimerResolution]
+Class="Function"
+Prototype="int GetAsyncTimerResolution(double *resolutionInSecs);"
+

@@ -1,0 +1,4 @@
+[InitFileLable]
+Class="Function"
+Prototype="void InitFileLable(FileLableTypeDef *pFileLable, char *pFileName);"
+

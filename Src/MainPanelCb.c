@@ -69,7 +69,7 @@ void GetCurveAttr(CurveAttrTypeDef* pCurveAttr);
 
 //==============================================================================
 // Global variables
-int threadFlag = 0;
+int threadFlag = 1;
 CmtThreadFunctionID abnmDCThreadId;  //异常发生时数据缓存函数的线程Id 
 int TimerID;
 unsigned char measureComPort;						//Serial Com Number
@@ -140,6 +140,7 @@ int CVICALLBACK MAIN_PANEL_Callback (int panel, int event, void *callbackData,
 
 			break;
 		case EVENT_CLOSE:
+			threadFlag = 0; 
 			if(controlComPort>0)
 			CloseCom(controlComPort);
 			if(measureComPort>0)
@@ -350,7 +351,7 @@ void RunKeyAction()														 //运行按钮按下后产生的一系列动作
 	DisplayImageFile (mainPanel, MAIN_PANEL_SELECT, "Resource\\Select.ico");
 	DisplayImageFile (mainPanel, MAIN_PANEL_CONFIGURE, "Resource\\Configure.ico"); 
 	DisplayImageFile (mainPanel, MAIN_PANEL_ANALYZE, "Resource\\Analyze_pressed.ico");
-	DispResultTableGraph();  			//根据当前状态显示相应界面dlp
+	DispResultTableGraph();  																	//根据当前状态显示相应界面dlp
 	
 	SetCtrlAttribute(graphDispPanel, GRAPHDISP_GRAPH1, ATTR_ENABLE_ZOOM_AND_PAN, 1 );			//设置曲线图可以通过鼠标键盘放大与缩小
 	SetCtrlAttribute(graphDispPanel, GRAPHDISP_GRAPH2, ATTR_ENABLE_ZOOM_AND_PAN, 1 );			//设置曲线图可以通过鼠标键盘放大与缩小
@@ -360,8 +361,8 @@ void RunKeyAction()														 //运行按钮按下后产生的一系列动作
 	DeleteTableRows (tablePanel, TABLE_TABLE1, 1, -1);											//清除表格 
 	DeleteTableColumns (tablePanel, TABLE_TABLE1, 1, -1);
 	
-	GetCtrlVal (hAdvanceSamplePanel, SAMPLE_ADV_CURRENTMODE, &logFlag);		//是否显示为log
-	GetCurveAttr(&CurveAttr);		//获取曲线属性	  
+	GetCtrlVal (hAdvanceSamplePanel, SAMPLE_ADV_CURRENTMODE, &logFlag);							//是否显示为log
+	GetCurveAttr(&CurveAttr);																	//获取曲线属性	  
 }
 void RunKeyAction_Again()																		//运行按钮按下后产生的一系列动作
 {
@@ -422,7 +423,8 @@ void GetCurveAttr(CurveAttrTypeDef* pCurveAttr)		//获取曲线属性
 void StopKeyAction(unsigned char select_Addr1,unsigned char select_Addr2)						//停止按钮按下后产生的一系列动作
 {
 	DiscardAsyncTimer(TimerID);									 							 	//关闭异步定时器  停止曲线显示 
-	Graph.pCurveArray->numOfPlotDots=0;
+	//Graph.pCurveArray->numOfPlotDots=0;
+	stop_Flag = 1;
 	SetCtrlAttribute (mainPanel, MAIN_PANEL_STOP, ATTR_DIMMED,1);      							//禁用 停止按钮      
 	SetCtrlAttribute (mainPanel, MAIN_PANEL_RUN, ATTR_DIMMED, 0);      							//恢复 开始按钮
 	SetCtrlAttribute (mainPanel, MAIN_PANEL_SAVE, ATTR_DIMMED, 0);     							//恢复 保存按钮
@@ -515,7 +517,6 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			GetTestPara(&I_V_Panel2, &TestPara2);																//得到源表 2 用户设置参数
 			numOfDots1 = abs(TestPara1.Current_Start - TestPara1.Current_Stop)/TestPara1.Current_Step +1;
 			numOfDots2 = abs(TestPara2.Current_Start - TestPara2.Current_Stop)/TestPara2.Current_Step +1;
-			
 			numOfDots =100 + (numOfDots1 >= numOfDots2 ? numOfDots1:numOfDots2);
 			
 			graphInit(graphIndex, numOfCurve, numOfDots, &Graph);
@@ -524,30 +525,26 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			
 			Table_ATTR.column = 7;   				//列数
 			Table_ATTR.column_width = 150;  		//列宽
-			Table_ATTR.row=numOfDots + 10;
-			
+			Table_ATTR.row=numOfDots + 10;			//表格行数
 			Graph.pGraphAttr->xAxisHead = 0;
 			Graph.pGraphAttr->xAxisTail = 100;
 			Graph.pGraphAttr->yAxisHead = 1.008e-13;
 	   		Graph.pGraphAttr->yAxisTail = 1.0134e-13; 
-			
 			Graph_Temp.pGraphAttr->xAxisHead = 0;
 			Graph_Temp.pGraphAttr->xAxisTail = 100;
 			Graph_Temp.pGraphAttr->yAxisHead = 0;
 	   		Graph_Temp.pGraphAttr->yAxisTail = 100;
-			
-		
+
 			Table_init(Table_title_IV, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);
+			
 			Graph.pGraphAttr->xAxisHead = TestPara1.Current_Start <= TestPara2.Current_Start ? TestPara1.Current_Start:TestPara2.Current_Start;
 			Graph.pGraphAttr->xAxisTail = TestPara1.Current_Stop >= TestPara2.Current_Stop ? TestPara1.Current_Stop:TestPara2.Current_Stop;
 			Graph_Temp.X_Axis1 = Graph.pGraphAttr->xAxisHead; 
-			
-			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,Graph.pGraphAttr->xAxisHead,Graph.pGraphAttr->xAxisTail);
+
+			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,Graph.pGraphAttr->xAxisHead,Graph.pGraphAttr->xAxisTail+10);
 			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_LEFT_YAXIS, VAL_MANUAL, Graph.pGraphAttr->yAxisHead, Graph.pGraphAttr->yAxisTail);					//设置电学Y轴的初始化坐标范围
-		    
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail);				//设置环境X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail+10);				//设置环境X轴的初始化坐标范围
 			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH2,VAL_LEFT_YAXIS,VAL_MANUAL,Graph_Temp.pGraphAttr->yAxisHead ,Graph_Temp.pGraphAttr->yAxisTail);			//环境Y轴
-			
 			break;
 		case NO_SWEEP_VI:
 			int val;
@@ -556,14 +553,9 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			GetTestPara(&V_I_Panel2, &TestPara2);  																//得到源表 2 用户设置参数
 			numOfDots1 = abs(TestPara1.Voltage_Start - TestPara1.Voltage_Stop)/TestPara1.Voltage_Step + 1;
 			numOfDots2 = abs(TestPara2.Voltage_Start - TestPara2.Voltage_Stop)/TestPara2.Voltage_Step + 1; 
-			
 			numOfDots =100 + (numOfDots1 >= numOfDots2 ? numOfDots1:numOfDots2);
-			
 			graphInit(graphIndex, numOfCurve, numOfDots, &Graph);
 			graphInit(graphIndex, 3, numOfDots + 5, &Graph_Temp); 
-			
-			
-			
 			Table_ATTR.column = 7;   																			//列数
 			Table_ATTR.column_width = 150;  																	//列宽
 			Table_ATTR.row=numOfDots + 10; 
@@ -578,42 +570,39 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			else if(val==4)
 				Table_init(Table_title_VI_pA, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);
 			
+			Table_ATTR.column = 7;   																			//列数
+			Table_ATTR.column_width = 150;  																	//列宽
+			Table_ATTR.row=numOfDots + 10; 
 			Graph.pGraphAttr->xAxisHead = 0;
 			Graph.pGraphAttr->xAxisTail = 100;
 			Graph.pGraphAttr->yAxisHead = 1.008e-13;
 	   		Graph.pGraphAttr->yAxisTail = 1.0134e-13; 
-			
-			
 			Graph_Temp.pGraphAttr->xAxisHead = 0;
 			Graph_Temp.pGraphAttr->xAxisTail = 100;
 			Graph_Temp.pGraphAttr->yAxisHead = 0;
 	   		Graph_Temp.pGraphAttr->yAxisTail = 100;
 			
-			
-			Graph.pGraphAttr->xAxisHead = TestPara1.Voltage_Start;   
-			Graph.pGraphAttr->xAxisTail = TestPara1.Voltage_Stop;
-			
-			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,Graph.pGraphAttr->xAxisHead,Graph.pGraphAttr->xAxisTail);
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail);				//设置环境X轴的初始化坐标范围  
+			Graph.pGraphAttr->xAxisHead = TestPara1.Current_Start <= TestPara2.Current_Start ? TestPara1.Current_Start:TestPara2.Current_Start;   
+			Graph.pGraphAttr->xAxisTail = TestPara1.Current_Stop >= TestPara2.Current_Stop ? TestPara1.Current_Stop:TestPara2.Current_Stop;
+			Graph_Temp.X_Axis1 = Graph.pGraphAttr->xAxisHead;
+
+			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,Graph.pGraphAttr->xAxisHead,Graph.pGraphAttr->xAxisTail+2);
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail+2);		//设置环境X轴的初始化坐标范围  
 			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH2,VAL_LEFT_YAXIS,VAL_MANUAL,Graph_Temp.pGraphAttr->yAxisHead ,Graph_Temp.pGraphAttr->yAxisTail);   //环境Y轴        
 			//*********************************************************得到用户选择的电流单位,只有在设置电流时使用 V-I V-T**************************************************************************//
 			GetCtrlVal(VIPanel,PANEL_V_I_START1UNIT,&(temp));									//得到电路板1用户选择的电流单位
 			TestPara1.rangeMode = (temp<<4)|TestPara1.rangeMode; 
-			
 			GetCtrlVal(VIPanel,PANEL_V_I_START2UNIT,&(temp));										//得到电路板2用户选择的电流单位
 			TestPara2.rangeMode = (temp<<4)|TestPara2.rangeMode; 
 			//*********************************************************得到用户选择的电流单位**************************************************************************//
-			
-			
 			break;
 		case NO_SWEEP_IT:
 			GetTestPara(&I_T_Panel1, &TestPara1);														//得到源表 1 用户设置参数
 			GetTestPara(&I_T_Panel2, &TestPara2);														//得到源表 2 用户设置参数
-			
-			//numOfDots1 =(TestPara1.runTime*1000)/TestPara1.timeStep + 1;
-			//numOfDots2 =(TestPara2.runTime*1000)/TestPara2.timeStep + 1;
+
 			TestPara1.TotalDelay = TestPara1.SampleDelay*0.001+(TestPara1.sampleNumber/(TestPara1.sampleRate*1.0));
 			TestPara2.TotalDelay = TestPara2.SampleDelay*0.001+(TestPara2.sampleNumber/(TestPara2.sampleRate*1.0));
+			
 			numOfDots1 =TestPara1.runTime/TestPara1.TotalDelay;
 			numOfDots2 =TestPara2.runTime/TestPara2.TotalDelay;
 			
@@ -623,10 +612,9 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			graphInit(graphIndex, 3, numOfDots + 5, &Graph_Temp);
 			Graph.pCurveArray->numOfTotalDots = numOfDots;												//理论计算总点数
 			
-			Table_ATTR.column = 7;   				//列数
-			Table_ATTR.column_width = 150;  		//列宽
+			Table_ATTR.column = 7;   																	//列数
+			Table_ATTR.column_width = 150;  															//列宽
 			Table_ATTR.row=numOfDots + 10;
-			
 			Graph.pGraphAttr->xAxisHead = 0;
 			Graph.pGraphAttr->xAxisTail = 100;
 			Graph.pGraphAttr->yAxisHead = 1.008e-13;
@@ -637,11 +625,11 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			Graph_Temp.pGraphAttr->yAxisHead = 0;
 	   		Graph_Temp.pGraphAttr->yAxisTail = 100;
 
-			Table_init(Table_title_IT, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);																				//初始化表格
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail); 						//设置电学X轴的初始化坐标范围
-			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_LEFT_YAXIS, VAL_MANUAL, Graph.pGraphAttr->yAxisHead, Graph.pGraphAttr->yAxisTail);						//设置电学Y轴的初始化坐标范围
+			Table_init(Table_title_IT, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);																					//初始化表格
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail+2); 						//设置电学X轴的初始化坐标范围
+			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_LEFT_YAXIS, VAL_MANUAL, Graph.pGraphAttr->yAxisHead, Graph.pGraphAttr->yAxisTail);							//设置电学Y轴的初始化坐标范围
 			
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail);				//设置环境X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail+2);				//设置环境X轴的初始化坐标范围
 			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH2,VAL_LEFT_YAXIS,VAL_MANUAL,Graph_Temp.pGraphAttr->yAxisHead ,Graph_Temp.pGraphAttr->yAxisTail);   //环境Y轴  
 			break;
 		case NO_SWEEP_RT:
@@ -656,10 +644,9 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			numOfDots1 =TestPara1.runTime/TestPara1.TotalDelay;
 			numOfDots2 =TestPara2.runTime/TestPara2.TotalDelay;
 			
-			
 			numOfDots =200 + (numOfDots1 >= numOfDots2 ? numOfDots1:numOfDots2);
 			graphInit(graphIndex, numOfCurve, numOfDots, &Graph);
-			graphInit(graphIndex, 3, numOfDots + 5, &Graph_Temp);
+			graphInit(graphIndex, 3, numOfDots + 5, &Graph_Temp);			
 			Graph.pCurveArray->numOfTotalDots = numOfDots;												//理论计算总点数
 			
 			Table_ATTR.column = 7;   				//列数
@@ -670,17 +657,16 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			Graph.pGraphAttr->xAxisTail = 100;
 			Graph.pGraphAttr->yAxisHead = 1.008e-13;
 	   		Graph.pGraphAttr->yAxisTail = 1.0134e-13; 
-			
 			Graph_Temp.pGraphAttr->xAxisHead = 0;
 			Graph_Temp.pGraphAttr->xAxisTail = 100;
 			Graph_Temp.pGraphAttr->yAxisHead = 0;
 	   		Graph_Temp.pGraphAttr->yAxisTail = 100;
 			
 			Table_init(Table_title_RT, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail); 						//设置电学X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail+10); 						//设置电学X轴的初始化坐标范围
 			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_LEFT_YAXIS, VAL_MANUAL, Graph.pGraphAttr->yAxisHead, Graph.pGraphAttr->yAxisTail);						//设置电学Y轴的初始化坐标范围
 			
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail);				//设置环境X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail+10);				//设置环境X轴的初始化坐标范围
 			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_LEFT_YAXIS  , VAL_MANUAL, Graph_Temp.pGraphAttr->yAxisHead, Graph_Temp.pGraphAttr->yAxisTail);			//设置环境Y轴的初始化坐标范围  建议使用控件自动调整Y轴坐标的位置
 			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH2,VAL_LEFT_YAXIS,VAL_MANUAL,Graph_Temp.pGraphAttr->yAxisHead ,Graph_Temp.pGraphAttr->yAxisTail);   //环境Y轴  
 			break;
@@ -722,10 +708,10 @@ void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned 
 			
 			
 			Table_init(Table_title_VT, Table_ATTR.column, Table_ATTR.column_width,Table_ATTR.row);																				//初始化表格
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail); 						//设置电学X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph.pGraphAttr->xAxisHead, Graph.pGraphAttr->xAxisTail+10); 						//设置电学X轴的初始化坐标范围
 			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH1, VAL_LEFT_YAXIS, VAL_MANUAL, Graph.pGraphAttr->yAxisHead, Graph.pGraphAttr->yAxisTail);						//设置电学Y轴的初始化坐标范围
 			
-			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail);				//设置环境X轴的初始化坐标范围
+			SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_BOTTOM_XAXIS, VAL_MANUAL, Graph_Temp.pGraphAttr->xAxisHead, Graph_Temp.pGraphAttr->xAxisTail+10);				//设置环境X轴的初始化坐标范围
 			//SetAxisScalingMode(graphDispPanel, GRAPHDISP_GRAPH2, VAL_LEFT_YAXIS  , VAL_MANUAL, Graph_Temp.pGraphAttr->yAxisHead, Graph_Temp.pGraphAttr->yAxisTail);			//设置环境Y轴的初始化坐标范围  建议使用控件自动调整Y轴坐标的位置
 			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH2,VAL_LEFT_YAXIS,VAL_MANUAL,Graph_Temp.pGraphAttr->yAxisHead ,Graph_Temp.pGraphAttr->yAxisTail);   //环境Y轴  
 			//*********************************************************得到用户选择的电流单位,只有在设置电流时使用 V-I V-T**************************************************************************//
@@ -766,32 +752,12 @@ void SelectSMU(unsigned char* select_Addr1,unsigned char* select_Addr2)
 	else
 		*select_Addr2=0x00;
 }
-//===========================================小马哥写=================================================================================  
-int CVICALLBACK AbnmDCThreadFunction (void *functionData)
-{ 
-    int n = 1;   	 //每十分之n更新一次缓存去的数据   
-	while(threadFlag == 1)
-	{
-		if(Graph.pCurveArray->numOfPlotDots > 0)  //每十分之一的总点数时更新一次缓存区
-		{
-		    WriteAndSaveExcel(tablePanel, TABLE_TABLE1);
-			n +=1;
-			if(n > 10)
-			{
-				n = 1;
-			}
-		}
-	}
-	return 0;
-}
-//============================================================================================================================  
 //   RunCallback
 int CVICALLBACK RunCallback (int panel, int control, int event,
 							 void *callbackData, int eventData1, int eventData2)
 {
 	int expType;
 	int index;
-	
 	switch (event)
 	{
 		case EVENT_LEFT_CLICK_UP:
@@ -821,35 +787,32 @@ int CVICALLBACK RunCallback (int panel, int control, int event,
 					GetCtrlVal (hEnvCfgPanel, ENVIRONMEN_HUMIDITY, &humidityVal);	  					//dlp
 					GetCtrlVal (hEnvCfgPanel, ENVIRONMEN_PRESSURE, &pressureVal);	  					//dlp
 //========================================小马哥写==============================================================================================
-					//threadFlag = 1;
+					threadFlag = 1;
 					//CmtScheduleThreadPoolFunction (DEFAULT_THREAD_POOL_HANDLE, AbnmDCThreadFunction, NULL, &abnmDCThreadId);//开辟新的线程缓存实验数据
 //======================================================================================================================================
 					
 					int temp1;
 					GetCtrlVal (hEnvCfgPanel,  ENVIRONMEN_MEASURE,&temp1);															//判断环境选择按按钮是否按下。
-					if(temp1 == 1)
-					{
-					  control_Flag = 1;
-					}else
-					{
-					  control_Flag = 0;
-					}
-					
-					
-					
+						if(temp1 == 1)
+						{
+						  control_Flag = 1;																								//环境参数是否查询标志位。
+						}else
+						{
+						  control_Flag = 0;
+						}
 					SelectSMU(&select_Addr1,&select_Addr2);																			//判断用户选择了那个板卡测量 
 					if(GetCtrlVal(expListPanel, EXP_LIST_EXPLIST, &expType)<0)  													//每次开始之前判断一下用户选择的 测试模式 
 						return -1;
 					TestPara1.testMode = expType; 																					//源表 1 测试类型
 					TestPara2.testMode = expType; 																					//源表 2 测试类型
 					RunKeyAction();  			  																					//运行按钮按下后产生的一系列动作 
+					Dispgraph(); 
 					ProtocolCfg(measureComPort, select_Addr1, select_Addr2,(unsigned char)expType, measUartTxBuf1,measUartTxBuf2);	//得到用户的设置参数  并发送
 					Delay(1);																								
 					ProtocolRun(measureComPort, select_Addr1, select_Addr2, measUartTxBuf1, measUartTxBuf2);						//send RUN command to instrument via UART 
 					Delay(0.01);
-					
 					double temp=(double)TestPara1.timeStep * 0.001;
-					temp = 0.01;																									//如果查询时间过快，会造成数据混乱，下位机响应中断过多
+					temp = 0.2;																									//如果查询时间过快，会造成数据混乱，下位机响应中断过多
 					TimerID = NewAsyncTimer(temp,-1, 1, TimerCallback, 0);
 				}
 			break;
@@ -893,7 +856,7 @@ int CVICALLBACK RunAgainCallback (int panel, int control, int event,
 					GetCtrlVal (hEnvCfgPanel, ENVIRONMEN_PRESSURE, &pressureVal);	  					//dlp
 
 //========================================小马哥写==============================================================================================
-					//threadFlag = 1;
+					threadFlag = 1;
 					//CmtScheduleThreadPoolFunction (DEFAULT_THREAD_POOL_HANDLE, AbnmDCThreadFunction, NULL, &abnmDCThreadId);//开辟新的线程缓存实验数据
 //======================================================================================================================================
 					
@@ -928,7 +891,7 @@ int CVICALLBACK StopCallback (int panel, int control, int event,
 	{
 		case EVENT_LEFT_CLICK_UP:
 //==============================================小马哥写==============================================================================     			
-			threadFlag = 0;
+			//threadFlag = 0;
 //==============================================小马哥写==============================================================================     			
 			StopKeyAction(select_Addr1,select_Addr2);							//停止按钮按下后产生的一系列动作
 

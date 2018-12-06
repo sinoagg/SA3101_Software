@@ -134,7 +134,7 @@ int CVICALLBACK ExpListCallback (int panel, int control, int event,
 				ExpList(0);
 				DispRuntime(1);
 			}
-			else if(index==THREE_TERMINAL)
+			/*else if(index==THREE_TERMINAL)
 			{
 				SetPanelPos(ThreeTerminalPanel, 105, 305);
 				DisplayPanel(ThreeTerminalPanel);
@@ -168,7 +168,7 @@ int CVICALLBACK ExpListCallback (int panel, int control, int event,
 				DispRuntime(1);
 			}
 			
-			Dispgraph();				//不同模式显示不同的名称和单位 
+			Dispgraph();				//不同模式显示不同的名称和单位*/ 
 			
 			break;
 	}

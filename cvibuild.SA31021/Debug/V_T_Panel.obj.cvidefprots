@@ -1,0 +1,16 @@
+[VTSMU1DecoCallback]
+Class="Function"
+Prototype="int VTSMU1DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VTSMU2DecoCallback]
+Class="Function"
+Prototype="int VTSMU2DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VtSmu1Callback]
+Class="Function"
+Prototype="int VtSmu1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VtSmu2Callback]
+Class="Function"
+Prototype="int VtSmu2Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

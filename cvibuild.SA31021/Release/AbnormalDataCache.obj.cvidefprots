@@ -1,0 +1,8 @@
+[LaunchExcelCBShow]
+Class="Function"
+Prototype="int LaunchExcelCBShow();"
+
+[WriteAndSaveExcel]
+Class="Function"
+Prototype="int WriteAndSaveExcel(int panelHandle, int controlID);"
+

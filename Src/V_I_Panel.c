@@ -101,6 +101,7 @@ int CVICALLBACK VISMU2DecoCallback (int panel, int control, int event,
 	return 0;
 }
 
+
 int CVICALLBACK Start1UnitCB (int panel, int control, int event,
 							  void *callbackData, int eventData1, int eventData2)
 {
@@ -109,32 +110,46 @@ int CVICALLBACK Start1UnitCB (int panel, int control, int event,
 	{
 		case EVENT_COMMIT:
 			GetCtrlVal (VIPanel, PANEL_V_I_START1UNIT, &val);
+			SetCtrlVal (VIPanel, PANEL_V_I_START2UNIT, val);
 			if(val==0)
 			{
-				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "A");
-				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT, "A");
-				
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "A");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "A");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "A");		  //SMU2单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT,  "A");
 				
 			}
 			else if(val==1)
 			{
-				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "mA");
-				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT, "mA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "mA");		//SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "mA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "mA");		//SMU2单位 
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT,  "mA");
+
 			}
 			else if(val==2)
 			{
-				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "uA");
-				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT, "uA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "uA");		 //SMU1单位 
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "uA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "uA");		 //SMU2单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT,  "uA");
+
 			}
 			else if(val==3)
 			{
-				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "nA");
-				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT, "nA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "nA");		 //SMU1单位 
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "nA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "nA");		 //SMU2单位  
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT,  "nA");
+
 			}
 			else if(val==4)
-			{
+			{   
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "pA");
-				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT, "pA");
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "pA");
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "pA");
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT,  "pA");
+
 			}
 			break;
 		case EVENT_LEFT_CLICK_UP:
@@ -148,7 +163,6 @@ int CVICALLBACK Start1UnitCB (int panel, int control, int event,
 	}
 	return 0;
 }
-
 int CVICALLBACK Start2UnitCB (int panel, int control, int event,
 							  void *callbackData, int eventData1, int eventData2)
 {
@@ -157,28 +171,40 @@ int CVICALLBACK Start2UnitCB (int panel, int control, int event,
 	{
 		case EVENT_COMMIT:
 			GetCtrlVal (VIPanel, PANEL_V_I_START2UNIT, &val);
+			SetCtrlVal (VIPanel, PANEL_V_I_START1UNIT, val); 
 			if(val==0)
 			{
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "A");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "A");
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "A");
 				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT, "A");
 			}
 			else if(val==1)
 			{
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "mA");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "mA");
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "mA");
 				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT, "mA");
 			}
 			else if(val==2)
 			{
+				
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "uA");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "uA");
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "uA");
 				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT, "uA");
 			}
 			else if(val==3)
 			{
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "nA");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "nA");
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "nA");
 				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT, "nA");
 			}
 			else if(val==4)
 			{
+				SetCtrlVal (VIPanel, PANEL_V_I_STOP1UNIT, "pA");		  //SMU1单位
+				SetCtrlVal (VIPanel, PANEL_V_I_GAP1UNIT,  "pA");
 				SetCtrlVal (VIPanel, PANEL_V_I_STOP2UNIT, "pA");
 				SetCtrlVal (VIPanel, PANEL_V_I_GAP2UNIT, "pA");
 			}

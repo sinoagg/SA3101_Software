@@ -1,0 +1,8 @@
+[curveInit]
+Class="Function"
+Prototype="int curveInit(int curveIndex, int numOfTotalDots, Curve_TypeDef *pCurve);"
+
+[curveDeinit]
+Class="Function"
+Prototype="int curveDeinit(Curve_TypeDef *pCurve);"
+

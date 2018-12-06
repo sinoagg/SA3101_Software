@@ -1,0 +1,98 @@
+HDRS = 	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\UI Files"
+	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\win64\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "AbnormalDataCache.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "AbnormalDataCache.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "asynctmr.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files" ;
+LOCATE on "asynctmr.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files" ;
+LOCATE on "Cgs_mt.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Cgs_mt.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Curve.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Curve.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "cvixml.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "cvixml.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Environment.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Environment.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ExpListPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ExpListPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "File.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "File.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Graph.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Graph.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_T_Panel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_V_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVdsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVdsPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVgsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVgsPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "inifile.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "inifile.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "LoadPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "LoadPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "main.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "main.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "MainPanelCb.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "MainPanelCb.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "msxmldom.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "msxmldom.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Plot.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Plot.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ProjectPanelCB.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ProjectPanelCB.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Protocol.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Protocol.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "R_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ResultMenuPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ResultMenuPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SampleCfgPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SampleCfgPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SetPanelCB.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SetPanelCB.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "system_ini.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "system_ini.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "table.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\UI Files" ;
+LOCATE on "table.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Timer.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Timer.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ToolsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Uart.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Uart.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "V_I_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "V_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Uart.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj" = 1 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Release64\\Uart.obj" ;
+Always $(PrjObjects) ;
+Depends all : $(PrjObjects) ;

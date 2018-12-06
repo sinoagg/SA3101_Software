@@ -1,0 +1,8 @@
+[Read_CGS_Value]
+Class="Function"
+Prototype="void Read_CGS_Value(unsigned char measureComPort);"
+
+[ProtocolGet_CGS_Data]
+Class="Function"
+Prototype="void ProtocolGet_CGS_Data(unsigned char *meas_CGS_UartRxBuf, Rx_CGS_DataTypeDef *Rx_CGS_Data);"
+

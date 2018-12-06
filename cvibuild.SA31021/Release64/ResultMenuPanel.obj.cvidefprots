@@ -1,0 +1,56 @@
+[DispResultTableGraph]
+Class="Function"
+Prototype="void DispResultTableGraph();"
+
+[TableCallback]
+Class="Function"
+Prototype="int TableCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GraphCallback]
+Class="Function"
+Prototype="int GraphCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ChoseCallback]
+Class="Function"
+Prototype="int ChoseCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveDataCallback]
+Class="Function"
+Prototype="int SaveDataCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ExitCallback]
+Class="Function"
+Prototype="int ExitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BrowseSheetCallback]
+Class="Function"
+Prototype="int BrowseSheetCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BrowseGraph1Callback]
+Class="Function"
+Prototype="int BrowseGraph1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BrowseGraph2Callback]
+Class="Function"
+Prototype="int BrowseGraph2Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveGraph1Callback]
+Class="Function"
+Prototype="int SaveGraph1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveGraph2Callback]
+Class="Function"
+Prototype="int SaveGraph2Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveSheetCallback]
+Class="Function"
+Prototype="int SaveSheetCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveAllCallback]
+Class="Function"
+Prototype="int SaveAllCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveDataPanelCallbck]
+Class="Function"
+Prototype="int SaveDataPanelCallbck(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

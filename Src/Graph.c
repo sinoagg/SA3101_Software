@@ -68,11 +68,23 @@ int GraphDeinit(Graph_TypeDef* pGraph)
 }
 void SetGraphX_Axis_TEMP(int control,Graph_TypeDef* pGraph)
 {
-
-	if(pGraph->pGraphAttr->xAxisTail <= pGraph->pCurveArray->numOfPlotDots * TestPara1.TotalDelay)												//已画点数*Step ===》实际x轴长度
-	{  	
-		pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-		SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
+	if(pGraph->pCurveArray->numOfPlotDots > 0)  
+	{
+		switch(TestPara1.testMode)
+		{
+			case NO_SWEEP_IV:
+			case NO_SWEEP_VI:
+				break;
+			case NO_SWEEP_IT:
+			case NO_SWEEP_RT:
+			case NO_SWEEP_VT: 
+				if(pGraph->pGraphAttr->xAxisTail <= pGraph->pCurveArray->numOfPlotDots * TestPara1.TotalDelay)												//已画点数*Step ===》实际x轴长度
+				{  	
+					pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
+					SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
+				}
+				break;
+		}
 	}
 }
 void SetGraphX_Axis(int control,Graph_TypeDef* pGraph)		   
@@ -264,12 +276,12 @@ void SetGraphX_Axis(int control,Graph_TypeDef* pGraph)
 						if(pGraph->pGraphAttr->xAxisTail <= *(pGraph->pCurveArray->pDotX-1))																				//改为真实时间后直接判断传输上来的X时间轴
 						{  	
 							pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
+							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,pGraph->pGraphAttr->xAxisHead, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
 						}
 						else if(pGraph->pGraphAttr->xAxisTail <= *((pGraph->pCurveArray +1)->pDotX-1))																		//改为真实时间后直接判断传输上来的X时间轴
 						{  	
 							pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
+							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,pGraph->pGraphAttr->xAxisHead, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
 						}
 						//************************************************* X轴  **********************************************************// 	
 				}else if((select_Addr2 == 0x02) && (rowIndex2 > 2))
@@ -307,7 +319,7 @@ void SetGraphX_Axis(int control,Graph_TypeDef* pGraph)
 					if(pGraph->pGraphAttr->xAxisTail <= *((pGraph->pCurveArray +1)->pDotX-1))																				//改为真实时间后直接判断传输上来的X时间轴
 					{  	
 						pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-						SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);											//设置  X  轴的范围
+						SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,pGraph->pGraphAttr->xAxisHead, pGraph->pGraphAttr->xAxisTail);											//设置  X  轴的范围
 					}
 					//************************************************* X轴  **********************************************************// 	
 					
@@ -347,42 +359,23 @@ void SetGraphX_Axis(int control,Graph_TypeDef* pGraph)
 						if(pGraph->pGraphAttr->xAxisTail <= *(pGraph->pCurveArray->pDotX-1))																				//真实时间修改后自动判断坐标轴扩展。
 						{  	
 							pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
+							SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,pGraph->pGraphAttr->xAxisHead, pGraph->pGraphAttr->xAxisTail);										//设置  X  轴的范围
 						}
-					//************************************************* X轴  **********************************************************//
+					//************************************************* X轴 **********************************************************//
 				}		
-
 				break;
 		}
 	}
 }
-void SetGraph_Temp_X_Axis(int control,Graph_TypeDef* pGraph)		   
-{					 
-	switch(TestPara1.testMode)
-	{
-		case NO_SWEEP_IV:
-			break;
-		case NO_SWEEP_VI:
-			break;
-		case NO_SWEEP_IT:
-		case NO_SWEEP_RT:
-			if(pGraph->pGraphAttr->xAxisTail <= pGraph->pCurveArray->numOfPlotDots * TestPara1.timeStep * 0.001) //已画点数*Step ===》实际x轴长度
-			{  	
-				pGraph->pGraphAttr->xAxisTail = pGraph->pGraphAttr->xAxisTail*1.2;
-				SetAxisScalingMode(graphDispPanel, control, VAL_BOTTOM_XAXIS, VAL_MANUAL,0, Graph.pGraphAttr->xAxisTail);//设置 X  轴的范围
-				
-			}
-			break;
-		case NO_SWEEP_VT:
-			break;
-	}
-
-}
 void SetGraphY_Axis_TEMP(int control,Graph_TypeDef* pGraph)
 {
-	if(pGraph->pGraphAttr->yAxisTail <= *(pGraph->pCurveArray->pDotY))		//温度值
+	if(pGraph->pCurveArray->numOfPlotDots > 0)
 	{
-		pGraph->pGraphAttr->yAxisTail=pGraph->pGraphAttr->yAxisTail+30;
-		SetAxisScalingMode(graphDispPanel,control , VAL_LEFT_YAXIS  , VAL_MANUAL, 0, pGraph->pGraphAttr->yAxisTail);
+		if(pGraph->pGraphAttr->yAxisTail <= *(pGraph->pCurveArray->pDotY-1))		//温度值
+		{
+			//pGraph->pGraphAttr->yAxisTail=pGraph->pGraphAttr->yAxisTail+30;
+			pGraph->pGraphAttr->yAxisTail = (*(pGraph->pCurveArray->pDotY-1))*1.3;
+			SetAxisScalingMode(graphDispPanel,control , VAL_LEFT_YAXIS  , VAL_MANUAL, 0, pGraph->pGraphAttr->yAxisTail);
+		}
 	}
 }

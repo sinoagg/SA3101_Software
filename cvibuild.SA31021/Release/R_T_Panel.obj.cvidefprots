@@ -1,0 +1,8 @@
+[RTSMU1DecoCallback]
+Class="Function"
+Prototype="int RTSMU1DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RTSMU2DecoCallback]
+Class="Function"
+Prototype="int RTSMU2DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

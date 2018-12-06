@@ -1,0 +1,16 @@
+[DeleteTabble_Row_Columns]
+Class="Function"
+Prototype="void DeleteTabble_Row_Columns();"
+
+[Table_init]
+Class="Function"
+Prototype="void Table_init(char (*table_title_IV)[20], int column, int column_width, int row);"
+
+[COMMANDBUTTON_Back]
+Class="Function"
+Prototype="int COMMANDBUTTON_Back(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CHECKBOX_Callback]
+Class="Function"
+Prototype="int CHECKBOX_Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

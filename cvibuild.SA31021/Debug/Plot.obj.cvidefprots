@@ -1,0 +1,12 @@
+[PlotCurve]
+Class="Function"
+Prototype="int PlotCurve(Graph_TypeDef *pGraph, int graphDispPanel, int control);"
+
+[PlotCurve_Temp]
+Class="Function"
+Prototype="int PlotCurve_Temp(Graph_TypeDef *pGraph_Temp, int graphDispPanel, int control, Rx_CGS_DataTypeDef *Rx_CGS_Data);"
+
+[temp_hum_pre_display]
+Class="Function"
+Prototype="void temp_hum_pre_display();"
+

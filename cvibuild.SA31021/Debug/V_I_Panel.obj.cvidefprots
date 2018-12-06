@@ -1,0 +1,16 @@
+[VISMU1DecoCallback]
+Class="Function"
+Prototype="int VISMU1DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VISMU2DecoCallback]
+Class="Function"
+Prototype="int VISMU2DecoCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Start1UnitCB]
+Class="Function"
+Prototype="int Start1UnitCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Start2UnitCB]
+Class="Function"
+Prototype="int Start2UnitCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

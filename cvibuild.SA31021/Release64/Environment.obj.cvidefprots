@@ -1,0 +1,36 @@
+[MesaureCallback]
+Class="Function"
+Prototype="int MesaureCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Humidity_displayCB]
+Class="Function"
+Prototype="int Humidity_displayCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Temp_displayCB]
+Class="Function"
+Prototype="int Temp_displayCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Pressure_displayCB]
+Class="Function"
+Prototype="int Pressure_displayCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CANVAS_CB]
+Class="Function"
+Prototype="int CANVAS_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Legend_display_CB]
+Class="Function"
+Prototype="int Legend_display_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TempCallback]
+Class="Function"
+Prototype="int TempCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[HumidityCallback]
+Class="Function"
+Prototype="int HumidityCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PressCallback]
+Class="Function"
+Prototype="int PressCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

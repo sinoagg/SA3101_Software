@@ -236,7 +236,11 @@ int CVICALLBACK SaveDataCallback (int panel, int control, int event,
 		case EVENT_LEFT_CLICK_UP:
  
 			DisplayImageFile (resultPanel, RESULTMENU_SAVE, "Resource\\SaveData_pressed.ico"); 
-			InstallPopup(saveDataPanel);														//弹出savedata面板 
+			/*InstallPopup(saveDataPanel);
+			HidePanel (RemindsaveDataPanel);//弹出savedata面板 */
+			//RemovePopup(RemindsaveDataPanel);
+			
+			DisplayPanel(saveDataPanel);
 			if(graphDispSelect==DISP_SINGLE_GRAPH)  
 			{
 				SetCtrlAttribute (saveDataPanel, SAVEDATA_BROWSEGRAPH2, ATTR_DIMMED, 1);
@@ -258,7 +262,8 @@ int CVICALLBACK ExitCallback (int panel, int control, int event,
 	switch (event)
 	{
 		case EVENT_LEFT_CLICK_UP:
-			RemovePopup (saveDataPanel);	 //移除、关闭savedata面板  
+			//RemovePopup (saveDataPanel);	 													//移除、关闭savedata面板 
+			HidePanel (saveDataPanel);															//隐藏saveDataPanel面板
 			DisplayImageFile (resultPanel, RESULTMENU_SAVE, "Resource\\SaveData.ico");
 			
 		break;
@@ -420,7 +425,7 @@ int CVICALLBACK SaveSheetCallback (int panel, int control, int event,void *callb
 	switch (event)
 	{
 		case EVENT_LEFT_CLICK_UP:
-			
+		
 			GetCtrlVal(panel, SAVEDATA_SHEETPATH, sheetSavePath);  
 			
 			if(sheetSavePath[0]=='\0')

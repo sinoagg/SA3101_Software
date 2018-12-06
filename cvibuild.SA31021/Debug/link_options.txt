@@ -1,0 +1,71 @@
+-nologo
+-out:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\SA3102.exe
+-arch:x86
+-timestamp
+-debug:2
+-res:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\linkersummary.txt
+-dlldeps:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\dlldependencies.txt
+-licensing:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\linkerlicensing.txt
+-browsedeps:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\AbnormalDataCache.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\asynctmr.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Cgs_mt.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Curve.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\cvixml.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Environment.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\ExpListPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\File.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Graph.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\I_T_Panel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\I_V_Panel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\IdVdsPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\IdVgsPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\inifile.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\LoadPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\main.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\MainPanelCb.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\msxmldom.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Plot.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\ProjectPanelCB.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Protocol.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\R_T_Panel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\ResultMenuPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\SampleCfgPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\SetPanelCB.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\system_ini.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\table.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Timer.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\ToolsPanel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\Uart.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\V_I_Panel.obj
+-in:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\V_T_Panel.obj
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2017\bin\msvc\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvitdms.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\activex\excel\msvc\excel2000.obj
+-more:d:\SA3102\SA3102NEW\SA3102\SA3102_Software\cvibuild.SA31021\Debug\excelreport.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\gpib.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

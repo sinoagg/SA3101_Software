@@ -1,0 +1,264 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\UI Files"
+	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\win64\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "AbnormalDataCache.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "AbnormalDataCache.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "asynctmr.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files" ;
+LOCATE on "asynctmr.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files" ;
+LOCATE on "Cgs_mt.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Cgs_mt.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Curve.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Curve.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "cvixml.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "cvixml.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Environment.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Environment.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ExpListPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ExpListPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "File.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "File.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Graph.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Graph.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_T_Panel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "I_V_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVdsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVdsPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVgsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "IdVgsPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "inifile.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "inifile.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "LoadPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "LoadPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "main.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "main.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "MainPanelCb.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "MainPanelCb.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "msxmldom.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "msxmldom.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Plot.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Plot.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ProjectPanelCB.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ProjectPanelCB.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Protocol.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Protocol.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "R_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ResultMenuPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ResultMenuPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SampleCfgPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SampleCfgPanel.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SetPanelCB.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "SetPanelCB.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "system_ini.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "system_ini.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "table.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\UI Files" ;
+LOCATE on "table.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Timer.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Timer.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "ToolsPanel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Uart.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "Uart.h" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "V_I_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+LOCATE on "V_T_Panel.c" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\AbnormalDataCache.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj" = 1 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\AbnormalDataCache.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files\\asynctmr.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj" = 2 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\asynctmr.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Cgs_mt.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj" = 3 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Cgs_mt.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Curve.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj" = 4 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Curve.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\cvixml.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj" = 5 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\cvixml.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Environment.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj" = 6 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Environment.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\ExpListPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj" = 7 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ExpListPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\File.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj" = 8 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\File.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Graph.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj" = 9 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Graph.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\I_T_Panel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj" = 10 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_T_Panel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\I_V_Panel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj" = 11 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\I_V_Panel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\IdVdsPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj" = 12 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVdsPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\IdVgsPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj" = 13 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\IdVgsPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\inifile.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj" = 14 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\inifile.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\LoadPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj" = 15 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\LoadPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\main.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj" = 16 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\main.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\MainPanelCb.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj" = 17 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\MainPanelCb.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\msxmldom.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj" = 18 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\msxmldom.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Plot.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj" = 19 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Plot.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\ProjectPanelCB.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj" = 20 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ProjectPanelCB.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Protocol.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj" = 21 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Protocol.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\R_T_Panel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj" = 22 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\R_T_Panel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\ResultMenuPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj" = 23 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ResultMenuPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\SampleCfgPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj" = 24 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SampleCfgPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\SetPanelCB.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj" = 25 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SetPanelCB.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\system_ini.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj" = 26 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\system_ini.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\UI Files\\table.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj" = 27 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\table.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Timer.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj" = 28 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Timer.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\ToolsPanel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj" = 29 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\ToolsPanel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\Uart.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj" = 30 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\Uart.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\V_I_Panel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj" = 31 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_I_Panel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Src\\V_T_Panel.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj" = 32 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj.out" ;
+PrjObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\V_T_Panel.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\Instrument Files\\excelreport.c" ;
+FILENUM on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj" = 33 ;
+DEFPROTS on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj.cvidefprots" ;
+OUTFILE on "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj" = "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj.out" ;
+InstrObjects += "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\excelreport.obj" ;
+Object "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\resources.res" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\resources.in.rc" ;
+Depends "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\resources.res" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\manifest.xml" ;
+MainFromObjects "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SA3102.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SA3102.exe" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\link_options.txt" ;
+Depends "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SA3102.exe" : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\resources.res" ;
+Depends all : "d:\\SA3102\\SA3102NEW\\SA3102\\SA3102_Software\\cvibuild.SA31021\\Debug64\\SA3102.exe" ;

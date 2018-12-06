@@ -89,19 +89,22 @@ int CVICALLBACK TimerCallback (int reserved, int timerId, int event, void *callb
 	switch (event)
 	{
 		case EVENT_TIMER_TICK:
-			timeNum++;
-			controlTime++;
-			if(timeNum >= 20)
+		
+			
+			if(measure_Uart_Flag == 1)//串口接收时要屏蔽数据查询
 			{
-				if(measure_Uart_Flag == 1)//串口接收时要屏蔽数据查询
-				{
-					ProtocolQuery( measureComPort, select_Addr1, select_Addr2, measUartTxBuf1,  measUartTxBuf2);
-				}
-				timeNum = 0;
+				ProtocolQuery( measureComPort, select_Addr1, select_Addr2, measUartTxBuf1,  measUartTxBuf2);
 			}
-			SetGraphX_Axis(GRAPHDISP_GRAPH1,&Graph);		
+			SetGraphX_Axis(GRAPHDISP_GRAPH1,&Graph);
+			
+			
 			SetGraphX_Axis_TEMP(GRAPHDISP_GRAPH2,&Graph_Temp);
+			
+			
+			
 			SetGraphY_Axis_TEMP(GRAPHDISP_GRAPH2,&Graph_Temp); 
+			
+			
 			break; 
 	}
 	return 0;

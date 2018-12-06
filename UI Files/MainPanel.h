@@ -43,7 +43,9 @@
 #define  MAIN_PANEL_TXT_PRINT             28      /* control type: textMsg, callback function: (none) */
 #define  MAIN_PANEL_RUNAGAIN              29      /* control type: picture, callback function: RunAgainCallback */
 #define  MAIN_PANEL_COMMANDBUTTON         30      /* control type: command, callback function: ReadportCallback */
-#define  MAIN_PANEL_TXT_RUN_2             31      /* control type: textMsg, callback function: (none) */
+#define  MAIN_PANEL_QINGCHU               31      /* control type: command, callback function: QINGCHU_CB */
+#define  MAIN_PANEL_QUANTU                32      /* control type: command, callback function: QUANTU_CB */
+#define  MAIN_PANEL_TXT_RUN_2             33      /* control type: textMsg, callback function: (none) */
 
 
      /* Control Arrays: */
@@ -63,6 +65,8 @@ int  CVICALLBACK ExpListCallback(int panel, int control, int event, void *callba
 int  CVICALLBACK MAIN_PANEL_Callback(int panel, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK PrintCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK ProjectCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK QINGCHU_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK QUANTU_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK ReadportCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK RunAgainCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK RunCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);

@@ -1,3 +1,4 @@
+#include "MainPanel.h"
 #include "asynctmr.h"
 #include "SetPanel.h"
 #include "inifile.h"
@@ -42,6 +43,7 @@
 //==============================================================================
 // Global variables
 RxDataTypeDef RxData1,RxData2;
+Rx_CGS_DataTypeDef Rx_CGS_Data;
 int logFlag;
 int rowIndex = 2;
 int rowIndex2 = 2;
@@ -49,8 +51,8 @@ int rowIndex3 = 2;
 static char dirName[500];
 static char pathName[500]; 
 static IniText serialPortIni; 
-
 char USART_RX_Buffer1[20];   //接收到的版本号
+int stop_Flag = 0; 
 //==============================================================================
 // Global functions
 
@@ -76,12 +78,11 @@ void PrintEdition(char USART_RX_Buffer1[20])
   	SetCtrlVal (aboutPanel, ABOUT_HARDWAREVERSION, Hard_version); 
   	SetCtrlVal (aboutPanel, ABOUT_FIRMWAREVERSION, Firm_version); 
   	SetCtrlVal (aboutPanel, ABOUT_SOFTWAREVERSION, Soft_version); 
-
 }
 static int CheckPortStatus(unsigned char portNumber, unsigned char uartRxLen, void (*pFunc)(int, int, void*))
 {
 	int status;
-	status = OpenComConfig(portNumber, "", 115200, 0, 8, 1, 1024, 1024);	   //Config and Connect serial port
+	status = OpenComConfig(portNumber, "", 115200, 0, 8, 1, 1024, 1024);	   			//Config and Connect serial port
 	if(status != 0) 
 	{
 		MessagePopup("Error","Device unconnected.");
@@ -89,7 +90,7 @@ static int CheckPortStatus(unsigned char portNumber, unsigned char uartRxLen, vo
 	}
 	else
 	{
-		InstallComCallback (portNumber, LWRS_RECEIVE, uartRxLen, 0, pFunc, 0);   //binding Callback function to serial input data		18 bytes received will calling for an interrupt
+		InstallComCallback (portNumber, LWRS_RECEIVE, uartRxLen, 0, pFunc, 0);   		//binding Callback function to serial input data		18 bytes received will calling for an interrupt
 		SetCTSMode(portNumber, LWRS_HWHANDSHAKE_OFF);
 		FlushInQ(portNumber);	   														//Clear input and output buffer
 		FlushOutQ(portNumber);
@@ -615,7 +616,6 @@ void Getxy(unsigned char *measUartRxBuf, RxDataTypeDef* RxData1, RxDataTypeDef* 
 				SetTableCellVal (tablePanel, TABLE_TABLE1, MakePoint (3,rowIndex2), *((Graph.pCurveArray + 1)->pDotX-1));
 				SetTableCellVal (tablePanel, TABLE_TABLE1, MakePoint (4,rowIndex2), *((Graph.pCurveArray + 1)->pDotY-1)); 
 				rowIndex2++;
-				
 				SetCtrlVal (hResultDispPanel, SAMPLE_VVV_2,RxData2->rx_voltage.num_float);							//监控电压
 				SetCtrlVal (hResultDispPanel, SAMPLE_RANGESELECT2 ,RxData2->rangeSelect);							//显现当前档位信息
 				
@@ -624,7 +624,7 @@ void Getxy(unsigned char *measUartRxBuf, RxDataTypeDef* RxData1, RxDataTypeDef* 
 			(Graph.pCurveArray+1)->numofSmu2RxDots++;
 		}
 		//**********************************************************    判断第一个点Y轴数据点来确定初始Y轴坐标轴范围  ***************************************************************************//	
-				if(select_Addr1 == 0x01 && select_Addr2 == 0x02)
+			if(select_Addr1 == 0x01 && select_Addr2 == 0x02)
 			{
 				if(rowIndex2 == 3)
 				{
@@ -691,10 +691,8 @@ void Getxy(unsigned char *measUartRxBuf, RxDataTypeDef* RxData1, RxDataTypeDef* 
 }
 void CVICALLBACK ComCallback(int portNumber, int eventMask, void * callbackData)
 {
-	measure_Uart_Flag = 0;
-	//control_Uart_Flag = 0;																						//接收时屏蔽查询，关闭数据查询
-	//timeNum = 0;																							
-	//SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 0);
+	measure_Uart_Flag = 0;																						//接收时屏蔽查询，关闭数据查询
+	SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 0); 													//接收时屏蔽查询，关闭数据查询//接收时屏蔽查询，不在查询数据
 		int rxNum = 0;																							  
 		int i=0;																								
 		rxNum = GetInQLen(measureComPort);  																	//读取串口中发送来的数据数量
@@ -709,16 +707,15 @@ void CVICALLBACK ComCallback(int portNumber, int eventMask, void * callbackData)
 				rxNum -=MEASURE_UART_RX_LEN;
 				i++;
 		}
-		PlotCurve(&Graph, graphDispPanel, GRAPHDISP_GRAPH1);									 	//   
+		PlotCurve(&Graph, graphDispPanel, GRAPHDISP_GRAPH1);									 		 
 		TestStop(TestPara1.testMode);
-	//SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 1);
-	//timeNum = 0;																						
-	//control_Uart_Flag = 1;
-	measure_Uart_Flag = 1; 																			//开启查询数据
+	measure_Uart_Flag = 1; 																						//开启查询数据
+	SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 1); 													//接收时屏蔽查询，关闭数据查询//接收时屏蔽查询，不在查询数据
+
 }
 //void CVICALLBACK CtrlComCallback(int portNumber, int eventMask, void * callbackData)
 //{
-//	control_Uart_Flag = 0;																			//接收时屏蔽查询，不在查询数据     
+//	control_Uart_Flag = 0;																						//接收时屏蔽查询，不在查询数据     
 //		int rxNum;
 //		int i,j = 0;
 //		Rx_CGS_DataTypeDef Rx_CGS_Data;
@@ -810,18 +807,13 @@ void CVICALLBACK ComCallback(int portNumber, int eventMask, void * callbackData)
 //			rxNum -=15;  
 //		}
 //		PlotCurve_Temp(&Graph_Temp, graphDispPanel, GRAPHDISP_GRAPH2, &Rx_CGS_Data);					//画曲线图
-//	control_Uart_Flag = 1;																				//接收时屏蔽查询，不在查询数据
+//		control_Uart_Flag = 1;																				//接收时屏蔽查询，不在查询数据
 //}
-
 void CVICALLBACK CtrlComCallback(int portNumber, int eventMask, void * callbackData)
 {
-	control_Flag = 0;																			//接收时屏蔽查询，不在查询数据     
+	SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 0); 													//接收时屏蔽查询，关闭数据查询//接收时屏蔽查询，不在查询数据
 		int rxNum;
 		int i,j = 0;
-		Rx_CGS_DataTypeDef Rx_CGS_Data;
-		Rx_CGS_Data.heating_stage_temp = 0;
-		Rx_CGS_Data.environmental_humidity = 0;
-		Rx_CGS_Data.pressure = 0;
 		rxNum = GetInQLen(controlComPort);  															//读取串口中发送来的数据数量
 		if(rxNum>500) rxNum=500;																		//防止超过内存范围
 		while(rxNum>=15)
@@ -859,7 +851,16 @@ void CVICALLBACK CtrlComCallback(int portNumber, int eventMask, void * callbackD
 								*(Graph_Temp.pCurveArray->pDotX++) = Graph_Temp.X_Axis1;
 								*((Graph_Temp.pCurveArray + 1)->pDotX++) = Graph_Temp.X_Axis1; 
 								*((Graph_Temp.pCurveArray + 2)->pDotX++) = Graph_Temp.X_Axis1;
-								Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + TestPara2.Current_Step;					//1*TestPara1.Current_Step;  
+								
+								if((TestPara1.testMode == NO_SWEEP_IV) || (TestPara2.testMode == NO_SWEEP_IV))
+								{
+									Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + TestPara1.Current_Step;				//1*TestPara1.Current_Step;
+								}
+								if((TestPara1.testMode == NO_SWEEP_VI) || (TestPara2.testMode == NO_SWEEP_VI))
+								{
+								   Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + TestPara1.Voltage_Step;				//1*TestPara1.Current_Step;
+								}
+								  
 							}
 						    *(Graph_Temp.pCurveArray->pDotY++)		 = Rx_CGS_Data.heating_stage_temp;				//热台温度      
 							*((Graph_Temp.pCurveArray + 1)->pDotY++) = Rx_CGS_Data.environmental_humidity;			//环境湿度
@@ -900,6 +901,138 @@ void CVICALLBACK CtrlComCallback(int portNumber, int eventMask, void * callbackD
 			}
 			rxNum -=15;  
 		}
-		PlotCurve_Temp(&Graph_Temp, graphDispPanel, GRAPHDISP_GRAPH2, &Rx_CGS_Data);					//画曲线图
-	control_Flag = 1;																				//接收时屏蔽查询，不在查询数据
+		PlotCurve_Temp(&Graph_Temp, graphDispPanel, GRAPHDISP_GRAPH2, &Rx_CGS_Data);							//画曲线图
+	SetAsyncTimerAttribute (TimerID, ASYNC_ATTR_ENABLED, 1); 													//接收时屏蔽查询，关闭数据查询//接收时屏蔽查询，不在查询数据
+
+}
+
+//===========================================小马哥写=================================================================================  
+int CVICALLBACK AbnmDCThreadFunction (void *functionData)
+{ 
+    //int n = 1;   	 //每十分之n更新一次缓存去的数据 
+	int i,j = 0;
+	while(threadFlag == 1)
+	{
+		//if(Graph.pCurveArray->numOfPlotDots > 0)  //每十分之一的总点数时更新一次缓存区
+		//{
+		// /*   WriteAndSaveExcel(tablePanel, TABLE_TABLE1);
+		//	n +=1;
+		//	if(n > 10)
+		//	{
+		//		n = 1;
+		//	}*/
+		//}
+		
+		if((control_Uart_Flag > 0) && (stop_Flag == 1))  													//判断环境测量是否被用户选择，判断最后一组环境参数是否缺点。补上缺少的点数。
+		{
+				if((select_Addr1 == 0x01) && (select_Addr2 == 0x02))										//判断环境参数的坐标是跟随 源表1  还是源表2 的横坐标
+				{
+					j = Graph.pCurveArray->numOfPlotDots - Graph_Temp.pCurveArray->numOfPlotDots;   		//两个板子的时候跟随1号板子的横坐标
+				}
+				if(select_Addr1 == 0x01)
+				{
+					j = Graph.pCurveArray->numOfPlotDots - Graph_Temp.pCurveArray->numOfPlotDots;
+				}
+				if(select_Addr2 == 0x02)
+				{
+					j = (Graph.pCurveArray + 1)->numOfPlotDots - Graph_Temp.pCurveArray->numOfPlotDots; 
+				}
+					//缺几个点补几个点
+					for(i = 0; i<j; i++)				  
+					{
+						if((TestPara1.testMode == NO_SWEEP_VT) || (TestPara1.testMode == NO_SWEEP_RT) || (TestPara1.testMode == NO_SWEEP_IT) || (TestPara2.testMode == NO_SWEEP_RT) || (TestPara2.testMode == NO_SWEEP_VT) || (TestPara2.testMode == NO_SWEEP_IT))
+						{
+							*(Graph_Temp.pCurveArray->pDotX++) = Graph_Temp.X_Axis1 * TestPara1.TotalDelay;
+							*((Graph_Temp.pCurveArray + 1)->pDotX++) = Graph_Temp.X_Axis1 * TestPara1.TotalDelay; 
+							*((Graph_Temp.pCurveArray + 2)->pDotX++) = Graph_Temp.X_Axis1 * TestPara1.TotalDelay;
+							Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + 1;											//1*TestPara1.Current_Step;
+						}
+						if((TestPara1.testMode == NO_SWEEP_IV) || (TestPara1.testMode == NO_SWEEP_VI) || (TestPara2.testMode == NO_SWEEP_IV) || (TestPara2.testMode == NO_SWEEP_VI))
+						{
+							*(Graph_Temp.pCurveArray->pDotX++) = Graph_Temp.X_Axis1;
+							*((Graph_Temp.pCurveArray + 1)->pDotX++) = Graph_Temp.X_Axis1; 
+							*((Graph_Temp.pCurveArray + 2)->pDotX++) = Graph_Temp.X_Axis1;
+							Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + TestPara2.Current_Step;						//1*TestPara1.Current_Step;  
+						}
+						    *(Graph_Temp.pCurveArray->pDotY++)		 = Rx_CGS_Data.heating_stage_temp;				//热台温度      
+							*((Graph_Temp.pCurveArray + 1)->pDotY++) = Rx_CGS_Data.environmental_humidity;			//环境湿度
+						
+						if(Rx_CGS_Data.pressure > 10500)															//限制压强显示，标准大气压。
+						{
+							Rx_CGS_Data.pressure = 10500;		  
+						}
+							*((Graph_Temp.pCurveArray + 2)->pDotY++) = Rx_CGS_Data.pressure * 0.001;				//压强
+				
+						if(tempVal)			  //DLP
+						{
+							SetTableCellRangeAttribute (tablePanel, TABLE_TABLE1, MakeRect (rowIndex3, 5, 1, 1), ATTR_CELL_TYPE, VAL_CELL_NUMERIC);
+							SetTableCellVal (tablePanel, TABLE_TABLE1, MakePoint (5,rowIndex3), *(Graph_Temp.pCurveArray->pDotY-1)); 
+						}
+						if(humidityVal)
+						{
+							SetTableCellRangeAttribute (tablePanel, TABLE_TABLE1, MakeRect (rowIndex3, 6, 1, 1), ATTR_CELL_TYPE, VAL_CELL_NUMERIC);
+							SetTableCellVal (tablePanel, TABLE_TABLE1, MakePoint (6,rowIndex3), *((Graph_Temp.pCurveArray + 1)->pDotY-1));
+						}
+						if(pressureVal)
+						{
+							SetTableCellRangeAttribute (tablePanel, TABLE_TABLE1, MakeRect (rowIndex3, 7, 1, 1), ATTR_CELL_TYPE, VAL_CELL_NUMERIC);
+							SetTableCellVal (tablePanel, TABLE_TABLE1, MakePoint (7,rowIndex3), Rx_CGS_Data.pressure*1.000);
+						}
+						rowIndex3++;
+						Graph_Temp.pCurveArray->numOfDotsToPlot++;  
+						(Graph_Temp.pCurveArray +1)->numOfDotsToPlot++;
+						(Graph_Temp.pCurveArray +2)->numOfDotsToPlot++;
+					}
+				PlotCurve_Temp(&Graph_Temp, graphDispPanel, GRAPHDISP_GRAPH2,&Rx_CGS_Data);										//画曲线图
+				//stop_Flag = 0;																								//清除补点标志位
+		}
+		if(stop_Flag == 1)
+		{
+		
+			SetGraphX_Axis(GRAPHDISP_GRAPH1,&Graph);		
+			SetGraphX_Axis_TEMP(GRAPHDISP_GRAPH2,&Graph_Temp);
+			SetGraphY_Axis_TEMP(GRAPHDISP_GRAPH2,&Graph_Temp);
+		
+			stop_Flag = 0;
+		}
+	}
+	return 0;
+}
+
+int CVICALLBACK QINGCHU_CB (int panel, int control, int event,
+							void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_LEFT_CLICK_UP:
+			
+			
+			
+			//更改坐标轴就可以   *(Graph.pCurveArray->pDotX++) = RxData1->rx_Theory_voltaget;
+			Graph.pGraphAttr->xAxisHead = *(Graph.pCurveArray->pDotX-1);
+			Graph.pGraphAttr->xAxisTail = (*(Graph.pCurveArray->pDotX-1))*1.5;
+			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,Graph.pGraphAttr->xAxisHead,Graph.pGraphAttr->xAxisTail);
+			
+
+			break;
+	}
+	return 0;
+}
+
+int CVICALLBACK QUANTU_CB (int panel, int control, int event,
+						   void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_LEFT_CLICK_UP:
+			SetAxisScalingMode(graphDispPanel,GRAPHDISP_GRAPH1,VAL_BOTTOM_XAXIS,VAL_MANUAL,0,Graph.pGraphAttr->xAxisTail);								
+			/*PlotXY(graphDispPanel, control, Graph.pCurveArray->pDotXHead, Graph.pCurveArray->pDotYHead, Graph.pCurveArray->numOfPlotDots, VAL_FLOAT, VAL_FLOAT, 
+										CurveAttr.plotStyle, 
+									  	CurveAttr.pointStyle, 
+									  	CurveAttr.lineStyle, 1, 
+									  	CurveAttr.smu1lineColor);*/
+
+			break;
+	}
+	return 0;
 }

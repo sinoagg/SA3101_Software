@@ -1,0 +1,160 @@
+[CVIXMLLoadDocument]
+Class="Function"
+Prototype="long CVIXMLLoadDocument(const char *fullPath, long long *doc);"
+
+[CVIXMLNewDocument]
+Class="Function"
+Prototype="long CVIXMLNewDocument(const char *rootElementName, long long *doc);"
+
+[CVIXMLSaveDocument]
+Class="Function"
+Prototype="long CVIXMLSaveDocument(long long doc, int formatDoc, const char *fullPath);"
+
+[CVIXMLDiscardDocument]
+Class="Function"
+Prototype="void CVIXMLDiscardDocument(long long doc);"
+
+[CVIXMLGetRootElement]
+Class="Function"
+Prototype="long CVIXMLGetRootElement(long long doc, long long *elem);"
+
+[CVIXMLNewElement]
+Class="Function"
+Prototype="long CVIXMLNewElement(long long parent, int index, const char *tag, long long *elem);"
+
+[CVIXMLSetElementValue]
+Class="Function"
+Prototype="long CVIXMLSetElementValue(long long elem, const char *value);"
+
+[CVIXMLGetElementTagLength]
+Class="Function"
+Prototype="long CVIXMLGetElementTagLength(long long elem, int *length);"
+
+[CVIXMLGetElementTag]
+Class="Function"
+Prototype="long CVIXMLGetElementTag(long long elem, char *tag);"
+
+[CVIXMLGetElementValueLength]
+Class="Function"
+Prototype="long CVIXMLGetElementValueLength(long long elem, int *length);"
+
+[CVIXMLGetElementValue]
+Class="Function"
+Prototype="long CVIXMLGetElementValue(long long elem, char *value);"
+
+[CVIXMLCopyElement]
+Class="Function"
+Prototype="long CVIXMLCopyElement(long long srcElem, int copyChildElements, long long destParent, int index, long long *destElem);"
+
+[CVIXMLDiscardElement]
+Class="Function"
+Prototype="void CVIXMLDiscardElement(long long elem);"
+
+[CVIXMLFindElements]
+Class="Function"
+Prototype="long CVIXMLFindElements(long long parent, const char *tag, struct ListStructTag **elemList);"
+
+[CVIXMLRemoveElement]
+Class="Function"
+Prototype="long CVIXMLRemoveElement(long long elem);"
+
+[CVIXMLGetNumChildElements]
+Class="Function"
+Prototype="long CVIXMLGetNumChildElements(long long parent, int *numChildren);"
+
+[CVIXMLGetChildElementByIndex]
+Class="Function"
+Prototype="long CVIXMLGetChildElementByIndex(long long parent, int index, long long *child);"
+
+[CVIXMLGetChildElementByTag]
+Class="Function"
+Prototype="long CVIXMLGetChildElementByTag(long long parent, const char *tag, long long *child);"
+
+[CVIXMLGetNextElement]
+Class="Function"
+Prototype="long CVIXMLGetNextElement(long long elem, long long *sibElem);"
+
+[CVIXMLGetPreviousElement]
+Class="Function"
+Prototype="long CVIXMLGetPreviousElement(long long elem, long long *sibElem);"
+
+[CVIXMLGetParentElement]
+Class="Function"
+Prototype="long CVIXMLGetParentElement(long long child, long long *parent);"
+
+[CVIXMLGetNumAttributes]
+Class="Function"
+Prototype="long CVIXMLGetNumAttributes(long long elem, int *numAttrs);"
+
+[CVIXMLGetAttributeByIndex]
+Class="Function"
+Prototype="long CVIXMLGetAttributeByIndex(long long elem, int index, long long *attr);"
+
+[CVIXMLGetAttributeByName]
+Class="Function"
+Prototype="long CVIXMLGetAttributeByName(long long elem, const char *name, long long *attr);"
+
+[CVIXMLGetNextAttribute]
+Class="Function"
+Prototype="long CVIXMLGetNextAttribute(long long attr, long long *sibAttr);"
+
+[CVIXMLGetPreviousAttribute]
+Class="Function"
+Prototype="long CVIXMLGetPreviousAttribute(long long attr, long long *sibAttr);"
+
+[CVIXMLAddAttribute]
+Class="Function"
+Prototype="long CVIXMLAddAttribute(long long elem, const char *name, const char *value);"
+
+[CVIXMLSetAttributeValue]
+Class="Function"
+Prototype="long CVIXMLSetAttributeValue(long long attr, const char *value);"
+
+[CVIXMLGetAttributeNameLength]
+Class="Function"
+Prototype="long CVIXMLGetAttributeNameLength(long long attr, int *length);"
+
+[CVIXMLGetAttributeName]
+Class="Function"
+Prototype="long CVIXMLGetAttributeName(long long attr, char *name);"
+
+[CVIXMLGetAttributeValueLength]
+Class="Function"
+Prototype="long CVIXMLGetAttributeValueLength(long long attr, int *length);"
+
+[CVIXMLGetAttributeValue]
+Class="Function"
+Prototype="long CVIXMLGetAttributeValue(long long attr, char *value);"
+
+[CVIXMLRemoveAttribute]
+Class="Function"
+Prototype="long CVIXMLRemoveAttribute(long long attr);"
+
+[CVIXMLDiscardAttribute]
+Class="Function"
+Prototype="void CVIXMLDiscardAttribute(long long attr);"
+
+[CVIXMLGetErrorString]
+Class="Function"
+Prototype="void CVIXMLGetErrorString(long error, char *buffer, unsigned long long bufferLength);"
+
+[CVIXMLGetLastErrorInfo]
+Class="Function"
+Prototype="long CVIXMLGetLastErrorInfo(ERRORINFO *errorInfo);"
+
+[CVIXMLGetDocumentActiveXHandle]
+Class="Function"
+Prototype="long CVIXMLGetDocumentActiveXHandle(long long doc, CAObjHandle *xmlHdl);"
+
+[CVIXMLGetElementActiveXHandle]
+Class="Function"
+Prototype="long CVIXMLGetElementActiveXHandle(long long elem, CAObjHandle *elemHdl);"
+
+[CVIXMLGetAttributeActiveXHandle]
+Class="Function"
+Prototype="long CVIXMLGetAttributeActiveXHandle(long long attr, CAObjHandle *attrHdl);"
+
+[CVIXMLLineFormatXMLDocument]
+Class="Function"
+Prototype="void CVIXMLLineFormatXMLDocument(const char *fullPath);"
+

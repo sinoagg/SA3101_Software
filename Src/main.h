@@ -38,9 +38,11 @@ extern int timeNum;											//定时计数
 extern char USART_RX_Buffer1[20];							//版本号
 extern unsigned char measure_Uart_Flag; 					//电学测量串口接收时要屏蔽数据查询 
 extern unsigned char control_Uart_Flag; 					//环境参数串口接收时要屏蔽数据查询
-extern unsigned char control_Flag; 							//环境参数串口接收时要屏蔽数据查询
+extern unsigned char control_Flag; 							//环境参数串口接收时要屏蔽数据查询,由用户选择是否测量。
 //==============================================================================
 // Global functions
+int CVICALLBACK AbnmDCThreadFunction (void *functionData);		 									//声明多线程回调函数
+
 
 #ifdef __cplusplus
     }

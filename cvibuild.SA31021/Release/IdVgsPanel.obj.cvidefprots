@@ -1,0 +1,12 @@
+[IdVgGATEDecoCB]
+Class="Function"
+Prototype="int IdVgGATEDecoCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[IdVgDRAINDecoCB]
+Class="Function"
+Prototype="int IdVgDRAINDecoCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[IdVgDrainModeCB]
+Class="Function"
+Prototype="int IdVgDrainModeCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

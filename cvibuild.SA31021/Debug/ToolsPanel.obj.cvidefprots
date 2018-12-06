@@ -1,0 +1,48 @@
+[ToolsPanelCallback]
+Class="Function"
+Prototype="int ToolsPanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CalibrationCallback]
+Class="Function"
+Prototype="int CalibrationCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CaliPanelCallback]
+Class="Function"
+Prototype="int CaliPanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RangeSelectCallback]
+Class="Function"
+Prototype="int RangeSelectCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ExitCaliCallback]
+Class="Function"
+Prototype="int ExitCaliCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CheckPortCallback]
+Class="Function"
+Prototype="int CheckPortCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AutoCheckCallback]
+Class="Function"
+Prototype="int AutoCheckCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ManualCallback]
+Class="Function"
+Prototype="int ManualCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReadMeasurePortCallback]
+Class="Function"
+Prototype="int ReadMeasurePortCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReadCtrlPortCallback]
+Class="Function"
+Prototype="int ReadCtrlPortCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CheckPanelCallback]
+Class="Function"
+Prototype="int CheckPanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReadPanelCallback]
+Class="Function"
+Prototype="int ReadPanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

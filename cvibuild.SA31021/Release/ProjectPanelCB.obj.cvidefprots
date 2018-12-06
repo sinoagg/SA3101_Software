@@ -1,0 +1,20 @@
+[TXT_OpenPrjCallback]
+Class="Function"
+Prototype="int TXT_OpenPrjCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PrjSelectCallback]
+Class="Function"
+Prototype="int PrjSelectCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SearchCallback]
+Class="Function"
+Prototype="int SearchCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PIC_ExitPrjCallback2]
+Class="Function"
+Prototype="int PIC_ExitPrjCallback2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PIC_ExitPrjCallback]
+Class="Function"
+Prototype="int PIC_ExitPrjCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,12 @@
+[AdvancSetCallback]
+Class="Function"
+Prototype="int AdvancSetCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BasicSetCallback]
+Class="Function"
+Prototype="int BasicSetCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RampleRateCallback]
+Class="Function"
+Prototype="int RampleRateCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

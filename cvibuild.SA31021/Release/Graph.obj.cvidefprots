@@ -1,0 +1,24 @@
+[graphInit]
+Class="Function"
+Prototype="int graphInit(int graphIndex, int numOfCurve, int numOfDots, Graph_TypeDef *pGraph);"
+
+[GraphDeinit]
+Class="Function"
+Prototype="int GraphDeinit(Graph_TypeDef *pGraph);"
+
+[SetGraphX_Axis_TEMP]
+Class="Function"
+Prototype="void SetGraphX_Axis_TEMP(int control, Graph_TypeDef *pGraph);"
+
+[SetGraphX_Axis]
+Class="Function"
+Prototype="void SetGraphX_Axis(int control, Graph_TypeDef *pGraph);"
+
+[SetGraph_Temp_X_Axis]
+Class="Function"
+Prototype="void SetGraph_Temp_X_Axis(int control, Graph_TypeDef *pGraph);"
+
+[SetGraphY_Axis_TEMP]
+Class="Function"
+Prototype="void SetGraphY_Axis_TEMP(int control, Graph_TypeDef *pGraph);"
+

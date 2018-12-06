@@ -138,32 +138,17 @@ int PlotCurve_Temp(Graph_TypeDef* pGraph_Temp, int graphDispPanel, int control,R
 				if(temp_flag == 1)		//温度
 				{
 					SetCtrlVal (hEnvResultPanel, ENVIRPANEL_STR_TEMP, Rx_CGS_Data->heating_stage_temp);				//热台温度
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, pGraph_Temp->pCurveArray->pDotXPlot-1, pGraph_Temp->pCurveArray->pDotYPlot-1, 
-												   numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.tempColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, pGraph_Temp->pCurveArray->pDotXPlot-1, pGraph_Temp->pCurveArray->pDotYPlot-1, numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle, CurveAttr.lineStyle, 1, CurveAttr.tempColor);
 				}
 				if(humidity_flag == 1)	//湿度
 				{
 					SetCtrlVal (hEnvResultPanel, ENVIRPANEL_STR_HUM,  Rx_CGS_Data->environmental_humidity);			//环境湿度
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +1)->pDotXPlot-1, (pGraph_Temp->pCurveArray +1)->pDotYPlot-1, 
-												   numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.humColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +1)->pDotXPlot-1, (pGraph_Temp->pCurveArray +1)->pDotYPlot-1, numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle, CurveAttr.lineStyle, 1, CurveAttr.humColor);
 				}
 				if(pressure_flag == 1)	//压强
 				{
 					SetCtrlVal (hEnvResultPanel, ENVIRPANEL_STR_PRES, Rx_CGS_Data->pressure * 0.001);				//压强 
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +2)->pDotXPlot-1, (pGraph_Temp->pCurveArray +2)->pDotYPlot-1, 
-												   numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.pressColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +2)->pDotXPlot-1, (pGraph_Temp->pCurveArray +2)->pDotYPlot-1, numOfDotsToPlot+1, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle, CurveAttr.lineStyle, 1, CurveAttr.pressColor);
 				}
 				pGraph_Temp->pCurveArray->numOfPlotDots+=numOfDotsToPlot;				//画图总点数递增
 				pGraph_Temp->pCurveArray->pDotXPlot+=numOfDotsToPlot;					//画图点X坐标指针递增
@@ -187,31 +172,16 @@ int PlotCurve_Temp(Graph_TypeDef* pGraph_Temp, int graphDispPanel, int control,R
 			{	
 				if(temp_flag == 1)
 				{
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, pGraph_Temp->pCurveArray->pDotXPlot, pGraph_Temp->pCurveArray->pDotYPlot, 
-												   numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.tempColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, pGraph_Temp->pCurveArray->pDotXPlot, pGraph_Temp->pCurveArray->pDotYPlot, numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle, CurveAttr.lineStyle, 1, CurveAttr.tempColor);
 				}
 				
 				if(humidity_flag == 1) 
 				{
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +1)->pDotXPlot, (pGraph_Temp->pCurveArray +1)->pDotYPlot, 
-												   numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.humColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +1)->pDotXPlot, (pGraph_Temp->pCurveArray +1)->pDotYPlot, numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle,CurveAttr.lineStyle,1,CurveAttr.humColor);
 				}
 				if(pressure_flag == 1)
 				{
-					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +2)->pDotXPlot, (pGraph_Temp->pCurveArray +2)->pDotYPlot, 
-												   numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, 
-												   CurveAttr.plotStyle, 
-									  			   CurveAttr.pointStyle, 
-									  			   CurveAttr.lineStyle, 1, 
-									  			   CurveAttr.pressColor);
+					pGraph_Temp->plotHandle=PlotXY(graphDispPanel, control, (pGraph_Temp->pCurveArray +2)->pDotXPlot, (pGraph_Temp->pCurveArray +2)->pDotYPlot, numOfDotsToPlot, VAL_FLOAT, VAL_FLOAT, CurveAttr.plotStyle, CurveAttr.pointStyle, CurveAttr.lineStyle, 1, CurveAttr.pressColor);
 				}
 				pGraph_Temp->pCurveArray->numOfPlotDots+=numOfDotsToPlot;				//画图总点数递增
 				pGraph_Temp->pCurveArray->pDotXPlot+=numOfDotsToPlot;					//画图点X坐标指针递增

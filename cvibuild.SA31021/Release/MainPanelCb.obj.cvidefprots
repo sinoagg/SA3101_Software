@@ -1,0 +1,140 @@
+[MAIN_PANEL_Callback]
+Class="Function"
+Prototype="int MAIN_PANEL_Callback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Dispgraph]
+Class="Function"
+Prototype="void Dispgraph();"
+
+[RunKeyAction]
+Class="Function"
+Prototype="void RunKeyAction();"
+
+[RunKeyAction_Again]
+Class="Function"
+Prototype="void RunKeyAction_Again();"
+
+[GetCurveAttr]
+Class="Function"
+Prototype="void GetCurveAttr(CurveAttrTypeDef *pCurveAttr);"
+
+[StopKeyAction]
+Class="Function"
+Prototype="void StopKeyAction(unsigned char select_Addr1, unsigned char select_Addr2);"
+
+[ProtocolCfg]
+Class="Function"
+Prototype="void ProtocolCfg(unsigned char measureComPort, unsigned char devAddr1, unsigned char devAddr2, unsigned char expType, unsigned char *pmeasUartTxBuf1, unsigned char *pmeasUartTxBuf2);"
+
+[SelectSMU]
+Class="Function"
+Prototype="void SelectSMU(unsigned char *select_Addr1, unsigned char *select_Addr2);"
+
+[AbnmDCThreadFunction]
+Class="Function"
+Prototype="int AbnmDCThreadFunction(void *functionData);"
+
+[RunCallback]
+Class="Function"
+Prototype="int RunCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RunAgainCallback]
+Class="Function"
+Prototype="int RunAgainCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[StopCallback]
+Class="Function"
+Prototype="int StopCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveCallback]
+Class="Function"
+Prototype="int SaveCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SelectCallback]
+Class="Function"
+Prototype="int SelectCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AnalyzeCallback]
+Class="Function"
+Prototype="int AnalyzeCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SettingsCallback]
+Class="Function"
+Prototype="int SettingsCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ProjectCallback]
+Class="Function"
+Prototype="int ProjectCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ToolsCallback]
+Class="Function"
+Prototype="int ToolsCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OutputVoltageCaliCallback]
+Class="Function"
+Prototype="int OutputVoltageCaliCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ZeroCurrentCaliCallback]
+Class="Function"
+Prototype="int ZeroCurrentCaliCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CurrentCaliCallback]
+Class="Function"
+Prototype="int CurrentCaliCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveCaliCallback]
+Class="Function"
+Prototype="int SaveCaliCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CheckUpdateSoftware]
+Class="Function"
+Prototype="int CheckUpdateSoftware();"
+
+[CheckSoftware]
+Class="Function"
+Prototype="int CheckSoftware();"
+
+[CheckHardware]
+Class="Function"
+Prototype="int CheckHardware();"
+
+[SoftwareSystemUpdate_Download]
+Class="Function"
+Prototype="int SoftwareSystemUpdate_Download();"
+
+[HardwareSystemUpdate_Download]
+Class="Function"
+Prototype="int HardwareSystemUpdate_Download();"
+
+[UpDate_Callback]
+Class="Function"
+Prototype="int UpDate_Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SendVersion]
+Class="Function"
+Prototype="void SendVersion(int num);"
+
+[ReadFromConfigFile]
+Class="Function"
+Prototype="int ReadFromConfigFile(char *temp, char *temp1);"
+
+[UpdateSMU1Callback]
+Class="Function"
+Prototype="int UpdateSMU1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[UpdateSMU2Callback]
+Class="Function"
+Prototype="int UpdateSMU2Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PrintCallback]
+Class="Function"
+Prototype="int PrintCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReadportCallback]
+Class="Function"
+Prototype="int ReadportCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LedCallback]
+Class="Function"
+Prototype="int LedCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

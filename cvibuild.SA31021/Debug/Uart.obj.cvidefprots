@@ -1,0 +1,56 @@
+[SubString]
+Class="Function"
+Prototype="void SubString(char *str1, char *str2, int start, int length);"
+
+[PrintEdition]
+Class="Function"
+Prototype="void PrintEdition(char USART_RX_Buffer1[20]);"
+
+[CheckCloseCom]
+Class="Function"
+Prototype="void CheckCloseCom(int SA3102_UART_Status, unsigned char measureComPort, unsigned char controlComPort);"
+
+[CheckOpenCom]
+Class="Function"
+Prototype="int CheckOpenCom(unsigned char *measureComPort, unsigned char *controlComPort, unsigned char *measure_Uart_Flag, unsigned char *control_Uart_Flag);"
+
+[ReadSerialPort]
+Class="Function"
+Prototype="void ReadSerialPort(unsigned char *measureComPort, unsigned char *controlComPort);"
+
+[MeasureDeviceQuery]
+Class="Function"
+Prototype="void MeasureDeviceQuery(unsigned char *measureComPort);"
+
+[CtrlDeviceQuery]
+Class="Function"
+Prototype="void CtrlDeviceQuery(unsigned char *controlComPort);"
+
+[CheckMeasurePort]
+Class="Function"
+Prototype="int CheckMeasurePort(unsigned char *measureComPort, unsigned char i);"
+
+[CheckControlPort]
+Class="Function"
+Prototype="int CheckControlPort(unsigned char *controlComPort, unsigned char i);"
+
+[TestStop]
+Class="Function"
+Prototype="void TestStop(enum TestMode testMode);"
+
+[Getxy]
+Class="Function"
+Prototype="void Getxy(unsigned char *measUartRxBuf, RxDataTypeDef *RxData1, RxDataTypeDef *RxData2);"
+
+[ComCallback]
+Class="Function"
+Prototype="void ComCallback(int portNumber, int eventMask, void *callbackData);"
+
+[CtrlComCallback]
+Class="Function"
+Prototype="void CtrlComCallback(int portNumber, int eventMask, void *callbackData);"
+
+[AbnmDCThreadFunction]
+Class="Function"
+Prototype="int AbnmDCThreadFunction(void *functionData);"
+

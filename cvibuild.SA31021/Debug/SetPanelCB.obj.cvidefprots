@@ -1,0 +1,28 @@
+[SettingsCB]
+Class="Function"
+Prototype="int SettingsCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PrjBtnCallback]
+Class="Function"
+Prototype="int PrjBtnCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GraphBtnCallback]
+Class="Function"
+Prototype="int GraphBtnCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AboutBtnCallback]
+Class="Function"
+Prototype="int AboutBtnCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ProCallback]
+Class="Function"
+Prototype="int ProCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CancelCallback]
+Class="Function"
+Prototype="int CancelCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OkCallback]
+Class="Function"
+Prototype="int OkCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

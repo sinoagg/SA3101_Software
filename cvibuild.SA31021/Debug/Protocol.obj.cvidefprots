@@ -1,0 +1,24 @@
+[PrepareCfgTxData]
+Class="Function"
+Prototype="void PrepareCfgTxData(TestParaTypeDef *pTestPara1, TestParaTypeDef *pTestPara2, unsigned char devAddr1, unsigned char devAddr2, unsigned char expType, unsigned char *measUartTxBuf1, unsigned char *measUartTxBuf2);"
+
+[ProtocolRun]
+Class="Function"
+Prototype="void ProtocolRun(unsigned char measureComPort, unsigned char devAddr1, unsigned char devAddr2, unsigned char *measUartTxBuf1, unsigned char *measUartTxBuf2);"
+
+[ProtocolStop]
+Class="Function"
+Prototype="void ProtocolStop(unsigned char measureComPort, unsigned char devAddr1, unsigned char devAddr2, unsigned char *measUartTxBuf1, unsigned char *measUartTxBuf2);"
+
+[ProtocolQuery]
+Class="Function"
+Prototype="void ProtocolQuery(unsigned char measureComPort, unsigned char devAddr1, unsigned char devAddr2, unsigned char *measUartTxBuf1, unsigned char *measUartTxBuf2);"
+
+[ProtocolCalibrate]
+Class="Function"
+Prototype="void ProtocolCalibrate(unsigned char measureComPort, unsigned char devAddr1, unsigned char *measUartTxBuf1, unsigned char devAddr2, unsigned char *measUartTxBuf2);"
+
+[ProtocolGetData]
+Class="Function"
+Prototype="void ProtocolGetData(unsigned char *pUartRxBuf, RxDataTypeDef *pRxData1, RxDataTypeDef *pRxData2);"
+

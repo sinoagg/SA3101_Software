@@ -1,0 +1,2856 @@
+[MSXML_NewDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_NewDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_OpenDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_OpenDOMDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_ActiveDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_ActiveDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_IXMLDOMDocumentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMDocumentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMDocumentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMDocumentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMDocumentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMDocumentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMDocumentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMDocumentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMDocumentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMDocumentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMDocumentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMDocumentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMDocumentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMDocumentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenthasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMDocumentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMDocumentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMDocumentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMDocumentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMDocumentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMDocumentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMDocumentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMDocumentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMDocumentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMDocumentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMDocumenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenttransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMDocumentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMDocumentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMDocumentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMDocumentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMDocumentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMDocumentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMDocumenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenttransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMDocumentGetdoctype]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdoctype(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *documentType);"
+
+[MSXML_IXMLDOMDocumentGetimplementation]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetimplementation(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *impl);"
+
+[MSXML_IXMLDOMDocumentGetdocumentElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdocumentElement(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMElement);"
+
+[MSXML_IXMLDOMDocumentSetByRefdocumentElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetByRefdocumentElement(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle DOMElement);"
+
+[MSXML_IXMLDOMDocumentcreateElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateElement(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *tagName, CAObjHandle *element);"
+
+[MSXML_IXMLDOMDocumentcreateDocumentFragment]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateDocumentFragment(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *docFrag);"
+
+[MSXML_IXMLDOMDocumentcreateTextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateTextNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data, CAObjHandle *text);"
+
+[MSXML_IXMLDOMDocumentcreateComment]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateComment(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data, CAObjHandle *comment);"
+
+[MSXML_IXMLDOMDocumentcreateCDATASection]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateCDATASection(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data, CAObjHandle *cdata);"
+
+[MSXML_IXMLDOMDocumentcreateProcessingInstruction]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateProcessingInstruction(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *target, const char *data, CAObjHandle *pi);"
+
+[MSXML_IXMLDOMDocumentcreateAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateAttribute(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, CAObjHandle *attribute);"
+
+[MSXML_IXMLDOMDocumentcreateEntityReference]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateEntityReference(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, CAObjHandle *entityRef);"
+
+[MSXML_IXMLDOMDocumentgetElementsByTagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentgetElementsByTagName(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMDocumentcreateNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT type, const char *name, const char *namespaceURI, CAObjHandle *node);"
+
+[MSXML_IXMLDOMDocumentnodeFromID]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentnodeFromID(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *idString, CAObjHandle *node);"
+
+[MSXML_IXMLDOMDocumentload]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentload(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT xmlSource, short *isSuccessful);"
+
+[MSXML_IXMLDOMDocumentGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetreadyState(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *value);"
+
+[MSXML_IXMLDOMDocumentGetparseError]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparseError(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *errorObj);"
+
+[MSXML_IXMLDOMDocumentGeturl]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGeturl(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **urlString);"
+
+[MSXML_IXMLDOMDocumentGetasync]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetasync(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isAsync);"
+
+[MSXML_IXMLDOMDocumentSetasync]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetasync(CAObjHandle objectHandle, ERRORINFO *errorInfo, short isAsync);"
+
+[MSXML_IXMLDOMDocumentabort]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentabort(CAObjHandle objectHandle, ERRORINFO *errorInfo);"
+
+[MSXML_IXMLDOMDocumentloadXML]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentloadXML(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *bstrXML, short *isSuccessful);"
+
+[MSXML_IXMLDOMDocumentsave]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentsave(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT destination);"
+
+[MSXML_IXMLDOMDocumentGetvalidateOnParse]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetvalidateOnParse(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isValidating);"
+
+[MSXML_IXMLDOMDocumentSetvalidateOnParse]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetvalidateOnParse(CAObjHandle objectHandle, ERRORINFO *errorInfo, short isValidating);"
+
+[MSXML_IXMLDOMDocumentGetresolveExternals]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetresolveExternals(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isResolving);"
+
+[MSXML_IXMLDOMDocumentSetresolveExternals]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetresolveExternals(CAObjHandle objectHandle, ERRORINFO *errorInfo, short isResolving);"
+
+[MSXML_IXMLDOMDocumentGetpreserveWhiteSpace]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetpreserveWhiteSpace(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isPreserving);"
+
+[MSXML_IXMLDOMDocumentSetpreserveWhiteSpace]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetpreserveWhiteSpace(CAObjHandle objectHandle, ERRORINFO *errorInfo, short isPreserving);"
+
+[MSXML_IXMLDOMDocumentSetonreadystatechange]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetonreadystatechange(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+
+[MSXML_IXMLDOMDocumentSetondataavailable]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetondataavailable(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+
+[MSXML_IXMLDOMDocumentSetontransformnode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetontransformnode(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+
+[MSXML_NewIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_NewIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_OpenIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_OpenIXMLHttpRequest(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_ActiveIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_IXMLHttpRequestopen]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestopen(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *bstrMethod, const char *bstrUrl, struct tagVARIANT varAsync, struct tagVARIANT bstrUser, struct tagVARIANT bstrPassword);"
+
+[MSXML_IXMLHttpRequestsetRequestHeader]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestsetRequestHeader(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *bstrHeader, const char *bstrValue);"
+
+[MSXML_IXMLHttpRequestgetResponseHeader]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestgetResponseHeader(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *bstrHeader, char **pbstrValue);"
+
+[MSXML_IXMLHttpRequestgetAllResponseHeaders]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestgetAllResponseHeaders(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **pbstrHeaders);"
+
+[MSXML_IXMLHttpRequestsend]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestsend(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT varBody);"
+
+[MSXML_IXMLHttpRequestabort]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestabort(CAObjHandle objectHandle, ERRORINFO *errorInfo);"
+
+[MSXML_IXMLHttpRequestGetstatus]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetstatus(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *plStatus);"
+
+[MSXML_IXMLHttpRequestGetstatusText]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetstatusText(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **pbstrStatus);"
+
+[MSXML_IXMLHttpRequestGetresponseXML]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseXML(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *ppBody);"
+
+[MSXML_IXMLHttpRequestGetresponseText]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseText(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **pbstrBody);"
+
+[MSXML_IXMLHttpRequestGetresponseBody]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseBody(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+
+[MSXML_IXMLHttpRequestGetresponseStream]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseStream(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+
+[MSXML_IXMLHttpRequestGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetreadyState(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *plState);"
+
+[MSXML_IXMLHttpRequestSetonreadystatechange]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestSetonreadystatechange(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newValue);"
+
+[MSXML_NewIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_NewIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_OpenIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_OpenIXMLDSOControl(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_ActiveIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_IXMLDSOControlGetXMLDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetXMLDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *ppDoc);"
+
+[MSXML_IXMLDSOControlSetXMLDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlSetXMLDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle ppDoc);"
+
+[MSXML_IXMLDSOControlGetJavaDSOCompatible]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetJavaDSOCompatible(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *fJavaDSOCompatible);"
+
+[MSXML_IXMLDSOControlSetJavaDSOCompatible]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlSetJavaDSOCompatible(CAObjHandle objectHandle, ERRORINFO *errorInfo, long fJavaDSOCompatible);"
+
+[MSXML_IXMLDSOControlGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetreadyState(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *state);"
+
+[MSXML_NewIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_NewIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_OpenIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_OpenIXMLDocument2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_ActiveIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+
+[MSXML_IXMLDocument2Getroot]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getroot(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *p);"
+
+[MSXML_IXMLDocument2GetfileSize]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileSize(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2GetfileModifiedDate]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileModifiedDate(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2GetfileUpdatedDate]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileUpdatedDate(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2Geturl]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Geturl(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2Seturl]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Seturl(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *p);"
+
+[MSXML_IXMLDocument2GetmimeType]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetmimeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2GetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetreadyState(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *pl);"
+
+[MSXML_IXMLDocument2Getcharset]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getcharset(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2Setcharset]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Setcharset(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *p);"
+
+[MSXML_IXMLDocument2Getversion]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getversion(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2Getdoctype]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getdoctype(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2GetdtdURL]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetdtdURL(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **p);"
+
+[MSXML_IXMLDocument2createElement]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2createElement(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT vType, struct tagVARIANT var1, CAObjHandle *ppElem);"
+
+[MSXML_IXMLDocument2Getasync]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getasync(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *pf);"
+
+[MSXML_IXMLDocument2Setasync]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Setasync(CAObjHandle objectHandle, ERRORINFO *errorInfo, short pf);"
+
+[MSXML_IXMLDOMImplementationhasFeature]
+Class="Function"
+Prototype="long MSXML_IXMLDOMImplementationhasFeature(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *feature, const char *version, short *hasFeature);"
+
+[MSXML_IXMLDOMNodeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMNodeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMNodeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMNodeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMNodeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMNodeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMNodeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMNodeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMNodeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMNodeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMNodeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMNodeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMNodereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodereplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMNoderemoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNoderemoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMNodeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMNodehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodehasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMNodeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMNodecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodecloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMNodeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMNodeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMNodeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMNodeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMNodeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMNodeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMNodeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMNodeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMNodeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMNodeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMNodetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodetransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMNodeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMNodeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMNodeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMNodeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMNodeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMNodeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMNodetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodetransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMNodeListGetitem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGetitem(CAObjHandle objectHandle, ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+
+[MSXML_IXMLDOMNodeListGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *listLength);"
+
+[MSXML_IXMLDOMNodeListnextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListnextNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+
+[MSXML_IXMLDOMNodeListreset]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListreset(CAObjHandle objectHandle, ERRORINFO *errorInfo);"
+
+[MSXML_IXMLDOMNodeListGet_newEnum]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGet_newEnum(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+
+[MSXML_IXMLDOMNamedNodeMapgetNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapgetNamedItem(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+
+[MSXML_IXMLDOMNamedNodeMapsetNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapsetNamedItem(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newItem, CAObjHandle *nameItem);"
+
+[MSXML_IXMLDOMNamedNodeMapremoveNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapremoveNamedItem(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+
+[MSXML_IXMLDOMNamedNodeMapGetitem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGetitem(CAObjHandle objectHandle, ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+
+[MSXML_IXMLDOMNamedNodeMapGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *listLength);"
+
+[MSXML_IXMLDOMNamedNodeMapgetQualifiedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapgetQualifiedItem(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+
+[MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+
+[MSXML_IXMLDOMNamedNodeMapnextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapnextNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+
+[MSXML_IXMLDOMNamedNodeMapreset]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapreset(CAObjHandle objectHandle, ERRORINFO *errorInfo);"
+
+[MSXML_IXMLDOMNamedNodeMapGet_newEnum]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGet_newEnum(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMDocumentTypeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMDocumentTypeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMDocumentTypeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMDocumentTypeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMDocumentTypeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMDocumentTypeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMDocumentTypeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMDocumentTypeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMDocumentTypeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumentTypereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypereplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMDocumentTyperemoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTyperemoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMDocumentTypeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumentTypehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypehasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMDocumentTypeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMDocumentTypecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypecloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMDocumentTypeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMDocumentTypeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMDocumentTypeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMDocumentTypeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMDocumentTypeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMDocumentTypeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentTypeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentTypeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMDocumentTypetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypetransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMDocumentTypeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMDocumentTypeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMDocumentTypeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMDocumentTypeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMDocumentTypeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMDocumentTypeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMDocumentTypetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypetransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMDocumentTypeGetname]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetname(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **rootName);"
+
+[MSXML_IXMLDOMDocumentTypeGetentities]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetentities(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *entityMap);"
+
+[MSXML_IXMLDOMDocumentTypeGetnotations]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnotations(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *notationMap);"
+
+[MSXML_IXMLDOMElementGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMElementGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMElementSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMElementGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMElementGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMElementGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMElementGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMElementGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMElementGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMElementGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMElementGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMElementinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMElementreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMElementremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMElementappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMElementhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementhasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMElementGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMElementcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMElementGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMElementGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMElementSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMElementGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMElementGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMElementGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMElementSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMElementGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMElementSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMElementGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMElementtransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementtransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMElementselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMElementselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMElementGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMElementGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMElementGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMElementGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMElementtransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementtransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMElementGettagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGettagName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **tagName);"
+
+[MSXML_IXMLDOMElementgetAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetAttribute(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMElementsetAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementsetAttribute(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMElementremoveAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveAttribute(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name);"
+
+[MSXML_IXMLDOMElementgetAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetAttributeNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *name, CAObjHandle *attributeNode);"
+
+[MSXML_IXMLDOMElementsetAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementsetAttributeNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+
+[MSXML_IXMLDOMElementremoveAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveAttributeNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+
+[MSXML_IXMLDOMElementgetElementsByTagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetElementsByTagName(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMElementnormalize]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementnormalize(CAObjHandle objectHandle, ERRORINFO *errorInfo);"
+
+[MSXML_IXMLDOMAttributeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMAttributeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMAttributeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMAttributeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMAttributeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMAttributeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMAttributeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMAttributeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMAttributeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMAttributeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMAttributeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMAttributeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMAttributereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributereplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMAttributeremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMAttributeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMAttributehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributehasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMAttributeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMAttributecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributecloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMAttributeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMAttributeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMAttributeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMAttributeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMAttributeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMAttributeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMAttributeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMAttributeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMAttributeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMAttributeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMAttributetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributetransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMAttributeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMAttributeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMAttributeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMAttributeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMAttributeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMAttributeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMAttributetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributetransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMAttributeGetname]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetname(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **attributeName);"
+
+[MSXML_IXMLDOMAttributeGetvalue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetvalue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *attributeValue);"
+
+[MSXML_IXMLDOMAttributeSetvalue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetvalue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT attributeValue);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMDocumentFragmentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMDocumentFragmentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMDocumentFragmentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMDocumentFragmentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMDocumentFragmentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMDocumentFragmentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMDocumentFragmentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMDocumentFragmentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumentFragmentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMDocumentFragmentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMDocumentFragmentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMDocumentFragmenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenthasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMDocumentFragmentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMDocumentFragmentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMDocumentFragmentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMDocumentFragmentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMDocumentFragmentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMDocumentFragmentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMDocumentFragmentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentFragmentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMDocumentFragmentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMDocumentFragmenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenttransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMDocumentFragmentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMDocumentFragmentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMDocumentFragmentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMDocumentFragmentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMDocumentFragmentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMDocumentFragmentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMDocumentFragmenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenttransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMTextGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMTextGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMTextSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMTextGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMTextGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMTextGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMTextGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMTextGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMTextGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMTextGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMTextGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMTextinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMTextreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMTextremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMTextappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMTexthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexthasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMTextGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMTextcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMTextGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMTextGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMTextSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMTextGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMTextGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMTextGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMTextSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMTextGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMTextSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMTextGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMTexttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexttransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMTextselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMTextselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMTextGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMTextGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMTextGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMTextGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMTexttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexttransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMTextGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **data);"
+
+[MSXML_IXMLDOMTextSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMTextGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *dataLength);"
+
+[MSXML_IXMLDOMTextsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextsubstringData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, char **data);"
+
+[MSXML_IXMLDOMTextappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextappendData(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMTextinsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextinsertData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, const char *data);"
+
+[MSXML_IXMLDOMTextdeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextdeleteData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count);"
+
+[MSXML_IXMLDOMTextreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextreplaceData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, const char *data);"
+
+[MSXML_IXMLDOMTextsplitText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextsplitText(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+
+[MSXML_IXMLDOMCharacterDataGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMCharacterDataGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMCharacterDataSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMCharacterDataGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMCharacterDataGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMCharacterDataGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMCharacterDataGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMCharacterDataGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMCharacterDataGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMCharacterDataGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMCharacterDataGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMCharacterDatainsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatainsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCharacterDatareplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatareplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMCharacterDataremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMCharacterDataappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCharacterDatahasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatahasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMCharacterDataGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMCharacterDatacloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatacloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMCharacterDataGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMCharacterDataGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMCharacterDataSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMCharacterDataGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMCharacterDataGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMCharacterDataGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMCharacterDataSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMCharacterDataGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMCharacterDataSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMCharacterDataGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMCharacterDatatransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatatransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMCharacterDataselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMCharacterDataselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMCharacterDataGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMCharacterDataGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMCharacterDataGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMCharacterDataGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMCharacterDatatransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatatransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMCharacterDataGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **data);"
+
+[MSXML_IXMLDOMCharacterDataSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCharacterDataGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *dataLength);"
+
+[MSXML_IXMLDOMCharacterDatasubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatasubstringData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, char **data);"
+
+[MSXML_IXMLDOMCharacterDataappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataappendData(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCharacterDatainsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatainsertData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, const char *data);"
+
+[MSXML_IXMLDOMCharacterDatadeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatadeleteData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count);"
+
+[MSXML_IXMLDOMCharacterDatareplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatareplaceData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, const char *data);"
+
+[MSXML_IXMLDOMCommentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMCommentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMCommentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMCommentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMCommentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMCommentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMCommentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMCommentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMCommentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMCommentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMCommentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMCommentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCommentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMCommentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMCommentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCommenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenthasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMCommentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMCommentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMCommentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMCommentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMCommentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMCommentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMCommentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMCommentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMCommentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMCommentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMCommentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMCommentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMCommenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenttransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMCommentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMCommentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMCommentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMCommentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMCommentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMCommentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMCommenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenttransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMCommentGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **data);"
+
+[MSXML_IXMLDOMCommentSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCommentGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *dataLength);"
+
+[MSXML_IXMLDOMCommentsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentsubstringData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, char **data);"
+
+[MSXML_IXMLDOMCommentappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentappendData(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCommentinsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentinsertData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, const char *data);"
+
+[MSXML_IXMLDOMCommentdeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentdeleteData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count);"
+
+[MSXML_IXMLDOMCommentreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentreplaceData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, const char *data);"
+
+[MSXML_IXMLDOMCDATASectionGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMCDATASectionGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMCDATASectionSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMCDATASectionGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMCDATASectionGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMCDATASectionGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMCDATASectionGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMCDATASectionGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMCDATASectionGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMCDATASectionGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMCDATASectionGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMCDATASectioninsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioninsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCDATASectionreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMCDATASectionremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMCDATASectionappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMCDATASectionhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionhasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMCDATASectionGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMCDATASectioncloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioncloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMCDATASectionGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMCDATASectionGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMCDATASectionSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMCDATASectionGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMCDATASectionGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMCDATASectionGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMCDATASectionSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMCDATASectionGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMCDATASectionSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMCDATASectionGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMCDATASectiontransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiontransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMCDATASectionselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMCDATASectionselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMCDATASectionGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMCDATASectionGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMCDATASectionGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMCDATASectionGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMCDATASectiontransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiontransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMCDATASectionGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **data);"
+
+[MSXML_IXMLDOMCDATASectionSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCDATASectionGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetlength(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *dataLength);"
+
+[MSXML_IXMLDOMCDATASectionsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionsubstringData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, char **data);"
+
+[MSXML_IXMLDOMCDATASectionappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionappendData(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *data);"
+
+[MSXML_IXMLDOMCDATASectioninsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioninsertData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, const char *data);"
+
+[MSXML_IXMLDOMCDATASectiondeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiondeleteData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count);"
+
+[MSXML_IXMLDOMCDATASectionreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionreplaceData(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, long count, const char *data);"
+
+[MSXML_IXMLDOMCDATASectionsplitText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionsplitText(CAObjHandle objectHandle, ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMProcessingInstructionSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMProcessingInstructionGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMProcessingInstructionGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMProcessingInstructionGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMProcessingInstructionGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMProcessingInstructionGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMProcessingInstructionGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMProcessingInstructioninsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructioninsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMProcessingInstructionreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMProcessingInstructionremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMProcessingInstructionappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMProcessingInstructionhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionhasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMProcessingInstructionGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMProcessingInstructioncloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructioncloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMProcessingInstructionGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMProcessingInstructionSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMProcessingInstructionGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMProcessingInstructionGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMProcessingInstructionGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMProcessingInstructionSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMProcessingInstructionGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMProcessingInstructiontransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructiontransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMProcessingInstructionselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMProcessingInstructionselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMProcessingInstructionGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMProcessingInstructionGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMProcessingInstructionGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMProcessingInstructionGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMProcessingInstructiontransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructiontransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMProcessingInstructionGettarget]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGettarget(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMProcessingInstructionGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **value);"
+
+[MSXML_IXMLDOMProcessingInstructionSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetdata(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *value);"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMEntityReferenceSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMEntityReferenceGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMEntityReferenceGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMEntityReferenceGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMEntityReferenceGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMEntityReferenceGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMEntityReferenceGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMEntityReferenceGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMEntityReferenceinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMEntityReferencereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencereplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMEntityReferenceremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMEntityReferenceappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMEntityReferencehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencehasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMEntityReferenceGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMEntityReferencecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencecloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMEntityReferenceGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMEntityReferenceSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMEntityReferenceGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMEntityReferenceGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMEntityReferenceSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMEntityReferenceGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMEntityReferenceSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMEntityReferenceGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMEntityReferencetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencetransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMEntityReferenceselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMEntityReferenceselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMEntityReferenceGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMEntityReferenceGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMEntityReferenceGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMEntityReferenceGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMEntityReferencetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencetransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMParseErrorGeterrorCode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGeterrorCode(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *errorCode);"
+
+[MSXML_IXMLDOMParseErrorGeturl]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGeturl(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **urlString);"
+
+[MSXML_IXMLDOMParseErrorGetreason]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetreason(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **reasonString);"
+
+[MSXML_IXMLDOMParseErrorGetsrcText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetsrcText(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **sourceString);"
+
+[MSXML_IXMLDOMParseErrorGetline]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetline(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *lineNumber);"
+
+[MSXML_IXMLDOMParseErrorGetlinepos]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetlinepos(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *linePosition);"
+
+[MSXML_IXMLDOMParseErrorGetfilepos]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetfilepos(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *filePosition);"
+
+[MSXML_IXMLDOMNotationGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMNotationGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMNotationSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMNotationGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMNotationGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMNotationGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMNotationGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMNotationGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMNotationGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMNotationGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMNotationGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMNotationinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMNotationreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMNotationremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMNotationappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMNotationhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationhasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMNotationGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMNotationcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationcloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMNotationGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMNotationGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMNotationSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMNotationGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMNotationGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMNotationGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMNotationSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMNotationGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMNotationSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMNotationGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMNotationtransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationtransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMNotationselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMNotationselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMNotationGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMNotationGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMNotationGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMNotationGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMNotationtransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationtransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMNotationGetpublicId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetpublicId(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+
+[MSXML_IXMLDOMNotationGetsystemId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetsystemId(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+
+[MSXML_IXMLDOMEntityGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXMLDOMEntityGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXMLDOMEntitySetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXMLDOMEntityGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXMLDOMEntityGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXMLDOMEntityGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXMLDOMEntityGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXMLDOMEntityGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXMLDOMEntityGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXMLDOMEntityGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXMLDOMEntityGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXMLDOMEntityinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMEntityreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityreplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXMLDOMEntityremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXMLDOMEntityappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXMLDOMEntityhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityhasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXMLDOMEntityGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXMLDOMEntitycloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitycloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXMLDOMEntityGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXMLDOMEntityGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXMLDOMEntitySettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXMLDOMEntityGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXMLDOMEntityGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXMLDOMEntityGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXMLDOMEntitySetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXMLDOMEntityGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXMLDOMEntitySetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXMLDOMEntityGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXMLDOMEntitytransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitytransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXMLDOMEntityselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXMLDOMEntityselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXMLDOMEntityGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXMLDOMEntityGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXMLDOMEntityGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXMLDOMEntityGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXMLDOMEntitytransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitytransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXMLDOMEntityGetpublicId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetpublicId(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+
+[MSXML_IXMLDOMEntityGetsystemId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetsystemId(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+
+[MSXML_IXMLDOMEntityGetnotationName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnotationName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXTLRuntimeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **name);"
+
+[MSXML_IXTLRuntimeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *value);"
+
+[MSXML_IXTLRuntimeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetnodeValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT value);"
+
+[MSXML_IXTLRuntimeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeType(CAObjHandle objectHandle, ERRORINFO *errorInfo, long *type);"
+
+[MSXML_IXTLRuntimeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetparentNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *parent);"
+
+[MSXML_IXTLRuntimeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetchildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *childList);"
+
+[MSXML_IXTLRuntimeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetfirstChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+
+[MSXML_IXTLRuntimeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetlastChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+
+[MSXML_IXTLRuntimeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetpreviousSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+
+[MSXML_IXTLRuntimeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnextSibling(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+
+[MSXML_IXTLRuntimeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetattributes(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+
+[MSXML_IXTLRuntimeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeinsertBefore(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXTLRuntimereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimereplaceChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+
+[MSXML_IXTLRuntimeremoveChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeremoveChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+
+[MSXML_IXTLRuntimeappendChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeappendChild(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+
+[MSXML_IXTLRuntimehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimehasChildNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *hasChild);"
+
+[MSXML_IXTLRuntimeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetownerDocument(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+
+[MSXML_IXTLRuntimecloneNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimecloneNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+
+[MSXML_IXTLRuntimeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeTypeString(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nodeType);"
+
+[MSXML_IXTLRuntimeGettext]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **text);"
+
+[MSXML_IXTLRuntimeSettext]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSettext(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *text);"
+
+[MSXML_IXTLRuntimeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetspecified(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isSpecified);"
+
+[MSXML_IXTLRuntimeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetdefinition(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+
+[MSXML_IXTLRuntimeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+
+[MSXML_IXTLRuntimeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetnodeTypedValue(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+
+[MSXML_IXTLRuntimeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+
+[MSXML_IXTLRuntimeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetdataType(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *dataTypeName);"
+
+[MSXML_IXTLRuntimeGetxml]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetxml(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **xmlString);"
+
+[MSXML_IXTLRuntimetransformNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimetransformNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+
+[MSXML_IXTLRuntimeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeselectNodes(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+
+[MSXML_IXTLRuntimeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeselectSingleNode(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+
+[MSXML_IXTLRuntimeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetparsed(CAObjHandle objectHandle, ERRORINFO *errorInfo, short *isParsed);"
+
+[MSXML_IXTLRuntimeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnamespaceURI(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **namespaceURI);"
+
+[MSXML_IXTLRuntimeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetprefix(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **prefixString);"
+
+[MSXML_IXTLRuntimeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetbaseName(CAObjHandle objectHandle, ERRORINFO *errorInfo, char **nameString);"
+
+[MSXML_IXTLRuntimetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimetransformNodeToObject(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+
+[MSXML_IXTLRuntimeuniqueID]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeuniqueID(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle pNode, long *pID);"
+
+[MSXML_IXTLRuntimedepth]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimedepth(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle pNode, long *pDepth);"
+
+[MSXML_IXTLRuntimechildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimechildNumber(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+
+[MSXML_IXTLRuntimeancestorChildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeancestorChildNumber(CAObjHandle objectHandle, ERRORINFO *errorInfo, const char *bstrNodeName, CAObjHandle pNode, long *pNumber);"
+
+[MSXML_IXTLRuntimeabsoluteChildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeabsoluteChildNumber(CAObjHandle objectHandle, ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+
+[MSXML_IXTLRuntimeformatIndex]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatIndex(CAObjHandle objectHandle, ERRORINFO *errorInfo, long lIndex, const char *bstrFormat, char **pbstrFormattedString);"
+
+[MSXML_IXTLRuntimeformatNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatNumber(CAObjHandle objectHandle, ERRORINFO *errorInfo, double dblNumber, const char *bstrFormat, char **pbstrFormattedString);"
+
+[MSXML_IXTLRuntimeformatDate]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatDate(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT varDate, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+
+[MSXML_IXTLRuntimeformatTime]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatTime(CAObjHandle objectHandle, ERRORINFO *errorInfo, struct tagVARIANT varTime, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+
+[MSXML_XMLDOMDocumentEventsRegOnondataavailable]
+Class="Function"
+Prototype="long MSXML_XMLDOMDocumentEventsRegOnondataavailable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+
+[MSXML_XMLDOMDocumentEventsRegOnonreadystatechange]
+Class="Function"
+Prototype="long MSXML_XMLDOMDocumentEventsRegOnonreadystatechange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+

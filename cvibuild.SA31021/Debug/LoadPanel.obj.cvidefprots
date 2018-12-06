@@ -1,0 +1,4 @@
+[LoadInitPanel]
+Class="Function"
+Prototype="int LoadInitPanel();"
+

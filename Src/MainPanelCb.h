@@ -42,15 +42,15 @@ typedef struct
 extern FileLableTypeDef *pFileLable[];
 extern PrjHandleTypeDef SingleProject[];
 extern int tempVal,humidityVal,pressureVal; 
-extern int measureval;   
-//extern int logFlag;
+extern int measureval;
+extern int stop_Flag;
+extern int logFlag;
+extern int threadFlag;
 //==============================================================================
 // Global functions
 static int SaveConfigToFile(char* pConfigSavePath);
-void StopKeyAction(unsigned char select_Addr1,unsigned char select_Addr2);																			//停止按钮按下后产生的一系列动作  
-void Dispgraph();																		//不同模式显示不同的单位 				   
-int CVICALLBACK AbnmDCThreadFunction (void *functionData);		 //声明多线程回调函数 
-
+void StopKeyAction(unsigned char select_Addr1,unsigned char select_Addr2);						//停止按钮按下后产生的一系列动作  
+void Dispgraph();																				//不同模式显示不同的单位 				   
 #ifdef __cplusplus
     }
 #endif						 
