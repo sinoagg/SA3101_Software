@@ -16,22 +16,22 @@
 #define  ABOUT                            1
 #define  ABOUT_PICTURE                    2       /* control type: picture, callback function: (none) */
 #define  ABOUT_TEXT_UPDATE                3       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_EDITION_T                  4       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_EDITION                    5       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_TEXTMSG_2                  6       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_TEXTMSG_3                  7       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_HARDWAREVERSION            8       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_FIRMWAREVERSION            9       /* control type: textMsg, callback function: (none) */
-#define  ABOUT_TEXTMSG                    10      /* control type: textMsg, callback function: (none) */
-#define  ABOUT_SOFTWAREVERSION            11      /* control type: textMsg, callback function: (none) */
-#define  ABOUT_UPDATESMU21                12      /* control type: picture, callback function: UpdateSMU2Callback */
-#define  ABOUT_UPDATESMU1                 13      /* control type: picture, callback function: UpdateSMU1Callback */
-#define  ABOUT_LED                        14      /* control type: LED, callback function: LedCallback */
-#define  ABOUT_UPDATESOFT                 15      /* control type: picture, callback function: UpDate_Callback */
+#define  ABOUT_TEXTMSG_2                  4       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_TEXTMSG_3                  5       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_HARDWAREVERSION            6       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_FIRMWAREVERSION            7       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_TEXTMSG                    8       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_SOFTWAREVERSION            9       /* control type: textMsg, callback function: (none) */
+#define  ABOUT_UPDATESMU21                10      /* control type: picture, callback function: UpdateSMU2Callback */
+#define  ABOUT_UPDATESMU1                 11      /* control type: picture, callback function: UpdateSMU1Callback */
+#define  ABOUT_LED                        12      /* control type: LED, callback function: LedCallback */
+#define  ABOUT_UPDATESOFT                 13      /* control type: picture, callback function: UpDate_Callback */
+#define  ABOUT_UpDate_T                   14      /* control type: textMsg, callback function: UpDate_Callback */
+#define  ABOUT_UPDATEMU2_T                15      /* control type: textMsg, callback function: UpdateSMU2Callback */
 #define  ABOUT_TEXTMSG_4                  16      /* control type: textMsg, callback function: (none) */
-#define  ABOUT_UpDate_T                   17      /* control type: textMsg, callback function: UpDate_Callback */
+#define  ABOUT_EDITION_T                  17      /* control type: textMsg, callback function: (none) */
 #define  ABOUT_UPDATESMU1_T               18      /* control type: textMsg, callback function: UpdateSMU1Callback */
-#define  ABOUT_UPDATEMU2_T                19      /* control type: textMsg, callback function: UpdateSMU2Callback */
+#define  ABOUT_EDITION                    19      /* control type: textMsg, callback function: (none) */
 
 #define  ENVT                             2
 #define  ENVT_PROPATH                     2       /* control type: string, callback function: (none) */

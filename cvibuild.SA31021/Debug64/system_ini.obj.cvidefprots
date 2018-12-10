@@ -1,0 +1,12 @@
+[SaveSystemClose]
+Class="Function"
+Prototype="int SaveSystemClose(int temp);"
+
+[CheckSystemClose]
+Class="Function"
+Prototype="int CheckSystemClose();"
+
+[InitSystemClose]
+Class="Function"
+Prototype="int InitSystemClose(int temp);"
+

@@ -565,7 +565,23 @@ int CVICALLBACK SaveDataPanelCallbck (int panel, int event, void *callbackData,
 	switch (event)
 	{
 		case EVENT_CLOSE:
+			
 			RemovePopup (saveDataPanel);	 //ÒÆ³ý¡¢¹Ø±ÕsavedataÃæ°å  
+			DisplayImageFile (resultPanel, RESULTMENU_SAVE, "Resource\\SaveData.ico");
+
+			break;
+	}
+	return 0;
+}
+
+int CVICALLBACK REMINDSAVE_CB (int panel, int event, void *callbackData,
+							   int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_CLOSE:
+			
+			RemovePopup (RemindsaveDataPanel);	 //ÒÆ³ý¡¢¹Ø±ÕsavedataÃæ°å  
 			DisplayImageFile (resultPanel, RESULTMENU_SAVE, "Resource\\SaveData.ico");
 
 			break;

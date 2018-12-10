@@ -446,7 +446,6 @@ void TestStop(enum TestMode testMode)
 }
 void Getxy(unsigned char *measUartRxBuf, RxDataTypeDef* RxData1, RxDataTypeDef* RxData2) 							//判断接收源表1 源表2的数据
 {
-		//if((*measUartRxBuf  == 0x01) &&(Graph.pCurveArray->numofSmu1RxDots <= Graph.pCurveArray->numOfTotalDots-1)) //判断是否是 01 地址传来 的数据
 		if(*measUartRxBuf  == 0x01) //判断是否是 01 地址传来 的数据    
 		{
 			if(TestPara1.testMode == NO_SWEEP_IV)																	//根据不同模式 选择不同的X 轴数据
@@ -845,6 +844,13 @@ void CVICALLBACK CtrlComCallback(int portNumber, int eventMask, void * callbackD
 								*((Graph_Temp.pCurveArray + 1)->pDotX++) = Graph_Temp.X_Axis1 * TestPara1.TotalDelay; 
 								*((Graph_Temp.pCurveArray + 2)->pDotX++) = Graph_Temp.X_Axis1 * TestPara1.TotalDelay;
 								Graph_Temp.X_Axis1 = Graph_Temp.X_Axis1 + 1;										//1*TestPara1.Current_Step;
+							
+							 /*   *(Graph_Temp.pCurveArray->pDotX++) = *(Graph.pCurveArray->pDotX + Graph_Temp.X_Axis1);
+								*((Graph_Temp.pCurveArray + 1)->pDotX++) = *(Graph.pCurveArray->pDotX + Graph_Temp.X_Axis1); 
+								*((Graph_Temp.pCurveArray + 2)->pDotX++) = *(Graph.pCurveArray->pDotX + Graph_Temp.X_Axis1);
+								
+								Graph_Temp.X_Axis1++;*/
+							
 							}
 							if((TestPara1.testMode == NO_SWEEP_IV) || (TestPara1.testMode == NO_SWEEP_VI) || (TestPara2.testMode == NO_SWEEP_IV) || (TestPara2.testMode == NO_SWEEP_VI))
 							{

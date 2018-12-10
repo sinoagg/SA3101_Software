@@ -41,9 +41,9 @@
 #define  MAIN_PANEL_SMU2                  26      /* control type: radioButton, callback function: (none) */
 #define  MAIN_PANEL_PRINT                 27      /* control type: picture, callback function: PrintCallback */
 #define  MAIN_PANEL_TXT_PRINT             28      /* control type: textMsg, callback function: (none) */
-#define  MAIN_PANEL_RUNAGAIN              29      /* control type: picture, callback function: RunAgainCallback */
-#define  MAIN_PANEL_COMMANDBUTTON         30      /* control type: command, callback function: ReadportCallback */
-#define  MAIN_PANEL_QINGCHU               31      /* control type: command, callback function: QINGCHU_CB */
+#define  MAIN_PANEL_COMMANDBUTTON         29      /* control type: command, callback function: ReadportCallback */
+#define  MAIN_PANEL_QINGCHU               30      /* control type: command, callback function: QINGCHU_CB */
+#define  MAIN_PANEL_RUNAGAIN              31      /* control type: picture, callback function: RunAgainCallback */
 #define  MAIN_PANEL_QUANTU                32      /* control type: command, callback function: QUANTU_CB */
 #define  MAIN_PANEL_TXT_RUN_2             33      /* control type: textMsg, callback function: (none) */
 

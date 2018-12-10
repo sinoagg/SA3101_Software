@@ -58,3 +58,7 @@ Prototype="int AbnmDCThreadFunction(void *functionData);"
 Class="Function"
 Prototype="int QINGCHU_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 
+[QUANTU_CB]
+Class="Function"
+Prototype="int QUANTU_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

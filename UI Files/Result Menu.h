@@ -16,7 +16,7 @@
 #define  CHPANEL                          1
 #define  CHPANEL_CHECKBOX                 2       /* control type: radioButton, callback function: ChoseCallback */
 
-#define  REMINDSAVE                       2
+#define  REMINDSAVE                       2       /* callback function: REMINDSAVE_CB */
 #define  REMINDSAVE_TEXTMSG               2       /* control type: textMsg, callback function: (none) */
 
 #define  RESULTMENU                       3
@@ -59,6 +59,7 @@ int  CVICALLBACK BrowseSheetCallback(int panel, int control, int event, void *ca
 int  CVICALLBACK ChoseCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK ExitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK GraphCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK REMINDSAVE_CB(int panel, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK SaveAllCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK SaveDataCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK SaveDataPanelCallbck(int panel, int event, void *callbackData, int eventData1, int eventData2);

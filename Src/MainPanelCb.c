@@ -122,9 +122,9 @@ static CVIXMLAttribute  hHardCurrAttr = 0;
 // Global functions
 static void DispRuntime(int display)
 { 
-	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_TXT_RUNTIME, ATTR_VISIBLE, display);
+	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME_B, ATTR_VISIBLE, display);
 	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME, ATTR_VISIBLE, display); 
-	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_TXT_S, ATTR_VISIBLE, display);
+	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME_T, ATTR_VISIBLE, display);
 }
 //===================================================
 //   MAIN_PANEL_Callback
@@ -180,8 +180,8 @@ void Dispgraph()
 		
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE, 	"Voltage");
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE_2, 	"Voltage");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
 		
 	}
 	else if(index==EXP_V_I)
@@ -252,8 +252,8 @@ void Dispgraph()
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE, 	"Current");   //Current
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE_2, 	"Current");
 		
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "A");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "A");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "A");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "A");
 		
 		
 	}
@@ -273,8 +273,8 @@ void Dispgraph()
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE, 	"Voltage");   //current
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE_2, 	"Voltage");
 		
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
 		
 		
 	}
@@ -294,8 +294,8 @@ void Dispgraph()
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE, 	"Current");   //Current
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE_2, 	"Current");
 		
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "A");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "A");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "A");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "A");
 		
 		
 	}
@@ -316,8 +316,8 @@ void Dispgraph()
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE, 	"Voltage");
 		SetCtrlVal (hResultDispPanel, SAMPLE_RX_VOLTAGE_2, 	"Voltage");
 		
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
-		SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU1YUNIT_VOL, "mV");
+		//SetCtrlVal (hResultDispPanel, SAMPLE_SMU2YUNIT_VOL, "mV");
 	}
 	else
 	{

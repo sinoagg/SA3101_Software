@@ -56,9 +56,9 @@
 /// HIRET What does your function return?
 static void DispRuntime(int display)
 { 
-	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_TXT_RUNTIME, ATTR_VISIBLE, display);
+	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME_B, ATTR_VISIBLE, display);
 	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME, ATTR_VISIBLE, display); 
-	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_TXT_S, ATTR_VISIBLE, display);
+	SetCtrlAttribute (hBasicSamplePanel, SAMPLE_CFG_RUNTIME_T, ATTR_VISIBLE, display);
 }
 static void ExpList(int display)
 {
